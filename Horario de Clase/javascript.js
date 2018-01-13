@@ -7,7 +7,6 @@ function bdOver(obj) {
 function bdOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
-
 }
 
 function edOver(obj) {
@@ -18,7 +17,6 @@ function edOver(obj) {
 function edOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
-
 }
 
 function lmOver(obj) {
@@ -29,7 +27,6 @@ function lmOver(obj) {
 function lmOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
-
 }
 
 function prgOver(obj) {
@@ -40,7 +37,6 @@ function prgOver(obj) {
 function prgOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
-
 }
 
 function siOver(obj) {
@@ -52,7 +48,6 @@ function siOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
 
-}
 
 function libreOver(obj) {
 	obj.style.color = "green";
