@@ -1,0 +1,154 @@
+body {
+    width: 803px;
+    margin: auto;
+    background-color: lightyellow;
+}
+
+/*General nav configuation*/
+nav {
+    display: inline-block;
+    width: 740px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #0066FF;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/*Navigation classes and ID's*/
+#nav_list_home {
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    width: 800px;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    font-size: 0.9em;
+}
+
+.nav_list_home {
+    height: 25px;
+    position: absolute;
+    right: 160px;
+    bottom: -3px;
+    font-size: 1.2em;
+    padding: 3px 8px 0px 8px;
+}
+
+#nav_list_noticias {
+	position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    height: 200px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    font-size: 0.9em;
+}
+
+.nav_list_noticias {
+    position: absolute;
+    line-height: 30px;
+    font-size: 1.2em;
+    margin-left: -30px;
+}
+
+.nav_ul_blanco {
+	color: #FFFFFF;
+	font-size: 1.3em;
+}
+
+/*Dropdown Menu*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: #0066FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.show {
+    display:block;
+}
+
+.nav_ul_blanco_blog {
+	color: black;
+	font-size: 1.3em;
+	padding: 12px 16px;
+}
+
+#section_home {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#section_blog {
+    margin-left: 180px;
+}
+
+#section_noticias {
+    margin-left: 150px;
+}
+
+#chat_one {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+#chat_two {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    background-color: lightblue;
+    margin-left: 300px;
+}
+
+footer {
+    background: url('line.png') repeat-x top;
+    margin-top: 100px;
+}
+
+#footer_src {
+    margin-left: 300px;
+    margin-top: 10px;
+}
