@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+        <script src="../javascript.js"></script>
+        <title>Mean Streets of Gadgetzan</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/others/hearthstone.png">
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header>
+                <img id="main_image" src="../images/others/hearthstone1.jpg" />
+                <nav>
+                    <div id="nav_list">
+                        <ul class="nav_list2">
+                            <li><a href="One_Night_in_KarazhanEnglish.html" id="previous">Previous</a></li>
+                            <li><a href="../HomeEnglish.html">Home</a></li>
+                            <div class="dropdown">
+                                <button onclick="dropdown_classes()" class="dropbtn_classes">Classes</button>
+                                <div id="mydropdown_classes" class="dropdown_content_classes">
+                                    <a href="../ClassesEnglish.html#mage">Mage</a>
+                                    <a href="../ClassesEnglish.html#hunter">Hunter</a>
+                                    <a href="../ClassesEnglish.html#paladin">Paladin</a>
+                                    <a href="../ClassesEnglish.html#warrior">Warrior</a>
+                                    <a href="../ClassesEnglish.html#druid">Druid</a>
+                                    <a href="../ClassesEnglish.html#warlock">Warlock</a>
+                                    <a href="../ClassesEnglish.html#shaman">Shaman</a>
+                                    <a href="../ClassesEnglish.html#priest">Priest</a>
+                                    <a href="../ClassesEnglish.html#rogue">Rogue</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button onclick="dropdown_expansions()" class="dropbtn_expansions">Expansions</button>
+                                <div id="mydropdown_expansions" class="dropdown_content_expansions">
+                                    <a href="../ExpansionsEnglish.html#curse_of_naxxramas_separation">Curse of Naxxramas</a>
+                                    <a href="../ExpansionsEnglish.html#goblins_vs_gnomes_separation">Goblins vs Gnomes</a>
+                                    <a href="../ExpansionsEnglish.html#blackrock_mountain_separation">Blackrock Mountain</a>
+                                    <a href="../ExpansionsEnglish.html#the_grand_tournament_separation">The Grand Tournament</a>
+                                    <a href="../ExpansionsEnglish.html#league_of_explorers_separation">League of Explorers</a>
+                                    <a href="../ExpansionsEnglish.html#whispers_of_the_old_gods_separation">Whispers of the Old Gods</a>
+                                    <a href="../ExpansionsEnglish.html#one_night_in_karazhan_separation">One Night in Karazhan</a>
+                                    <a href="../ExpansionsEnglish.html#mean_streets_of_gadgetzan_separation">Mean Streets of Gadgetzan</a>
+                                    <a href="../ExpansionsEnglish.html#journey_to_un_goro_separation">Journey to Un'Goro</a>
+                                    <a href="../ExpansionsEnglish.html#knights_of_the_frozen_throne_separation">Knights of the Frozen Throne</a>
+                                    <a href="../ExpansionsEnglish.html#kobolds_and_catacombs_separation">Kobolds and Catacombs</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button onclick="dropdown_extras()" class="dropbtn_extras">Extras</button>
+                                <div id="mydropdown_extras" class="dropdown_content_extras">
+                                    <a href="Extras/VideosEnglish.html">Videos</a>
+                                    <a href="Extras/GalleryEnglish.html">Gallery</a>
+                                    <a href="Extras/FormatsEnglish.html">Formats</a>
+                                    <a href="Extras/QuizEnglish.html">Quiz</a>
+                                    <a href="Extras/BeginnersEnglish.html">Beginners Guide</a>
+                                </div>
+                            <li><a href="Journey_to_Un_GoroEnglish.html" id="next">Next</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <h1 class="h1_names">Mean Streets of Gadgetzan</h1>
+                <select id="select_class" onchange="my_function()">
+                    <option id="mage_option" value="select_a_class">Select Class</option>
+                    <option value="Mage">Mage</option>
+                    <option value="Hunter">Hunter</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Warrior">Warrior</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Shaman">Shaman</option>
+                    <option value="Priest">Priest</option>
+                    <option value="Rogue">Rogue</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+                <select id="select_rarity" onchange="my_function()">
+                    <option value="select_a_rarity">Select Rarity</option>
+                    <option value="Common">Common</option>
+                    <option value="Rare">Rare</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Legendary">Legendary</option>
+                </select>
+                <br />
+                <img id="cards_msg">
+            </section>
+            <footer>
+                <div id="read_in">
+                    <h1>Read in...</h1>
+                    <p><a href="#">Castellano</a></p>
+                </div>
+                <div id="follow_hearthstone">
+                    <h1>Follow Hearthstone</h1>
+                    <img src="../images/others/follow_hearthstone_sprite.png" usemap="hearthstone_media" />
+                    <map name="hearthstone_media">
+                        <area shape="rect" coords="10,10,50,50" href="http://www.facebook.com" title="Facebook" alt="Facebook" />
+                        <area shape="rect" coords="72,10,112,50" href="http://twitter.com" title="Twitter" alt="Twitter" />
+                        <area shape="rect" coords="134,10,176,50" href="http://youtube.com" title="YouTube" alt="YouTube" />
+                        <area shape="rect" coords="196,10,238,50" href="http://reddit.com" title="Reddit" alt="Reddit" />
+                        <area shape="rect" coords="260,10,300,50" href="http://plus.google.com" title="Google+" alt="Google+" />
+                    </map>
+                </div>
+                <img src="../images/others/coin.png" id="coin" onclick="coin(this)" />
+            </footer>
+        </div>
+    </body>
+</html>

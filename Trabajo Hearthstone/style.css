@@ -1,0 +1,447 @@
+/*Fonts*/
+@font-face {
+    font-family: 'GFSNeohellenic';
+    src: url('fonts2/GFSNeohellenic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Body*/
+body {
+    background: url('images/others/yellow_background.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#main_wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+/*Header*/
+#main_image {
+    margin-top: 5px;
+    height: 295px;
+    position: relative;
+    margin-bottom: 25px;
+    width: 800px;
+}
+
+/*Nav*/
+nav {
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #0066FF;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: 803380;
+    border-bottom: 3px solid #803380;
+}
+
+#nav_list {
+    position: absolute;
+    top: 258px;
+    border-radius: 0px 0px 5px 5px;
+    width: 794px;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: #49423c;
+    text-decoration: none;
+    border: 1px solid;
+}
+
+.nav_list2 {
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 130px;
+    bottom: -3px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    text-decoration: none;
+}
+
+.nav_list3 {
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 130px;
+    bottom: -3px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.nav_ul_blanco {
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+#previous, #next {
+	font-size: 0.9em;
+}
+
+#previous {
+	margin-right: 70px;
+}
+
+#next {
+	margin-left: 10px;
+	margin-right: -150px;
+}
+
+/*Dropdown Menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn_classes, .dropbtn_expansions, .dropbtn_extras {
+    background-color: #49423c;
+    color: #0066FF;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin-left: -10px;
+    margin-right: 5px;
+}
+
+.dropbtn_classes:hover, .dropbtn_classes:focus, .dropbtn_expansions:hover, .dropbtn_expansions:focus, .dropbtn_extras:hover,
+.dropbtn_extras:focus {
+    color: 803380;
+    border-bottom: 3px solid #803380;
+}
+
+.dropdown_content_classes {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+}
+
+.dropdown_content_expansions {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 350px;
+}
+
+.dropdown_content_extras {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+}
+
+.dropdown_content_classes a, .dropdown_content_expansions a, .dropdown_content_extras a {
+    color: #0066FF;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content_classes a:hover, .dropdown_content_expansions a:hover, .dropdown_content_extras a:hover {
+    background-color: lightgray;
+}
+
+.show_classes, .show_expansions, .show_extras {
+    display: block;
+}
+
+/*Section*/
+section {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+section h1 {
+    font-family: 'GFSNeohellenic', Arial, sans-serif;
+}
+
+section p {
+    font-size: 0.8em;
+    margin-right: 100px;
+}
+
+.hearthstone_icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.mana_crystals {
+    margin-left: 300px;
+    width: 200px;
+}
+
+.text_section {
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 100px;
+}
+
+/*Classes and Expansions*/
+.classes_img {
+    width: 150px;
+    float: left;
+}
+
+.classes_h {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    padding-left: 80px;
+    width: 600px;
+    text-align: justify;
+}
+
+.expansions_img {
+    width: 150px;
+    float: left;
+}
+
+.expansions_h {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    padding-left: 80px;
+    width: 600px;
+    text-align: justify;
+}
+
+.separation_from_png {
+    margin-left: 180px;
+    color: #0066FF;
+}
+
+#curse_of_naxxramas_separation {
+    margin-top: 25px;
+}
+
+#goblins_vs_gnomes_separation {
+    margin-top: 10px;
+}
+
+#blackrock_mountain_separation {
+    margin-top: 25px;
+}
+
+#the_grand_tournament_separation {
+    margin-top: 25px;
+}
+
+#league_of_explorers_separation {
+    margin-top: 25px;
+}
+
+#whispers_of_the_old_gods_separation {
+    margin-top: 25px;
+}
+
+#one_night_in_karazhan_separation {
+    margin-top: 25px;
+}
+
+#mean_streets_of_gadgetzan_separation {
+    margin-top: 25px;
+}
+
+#journey_to_un_goro_separation {
+    margin-top: 25px;
+}
+
+#knights_of_the_frozen_throne_separation {
+    margin-top: 30px;
+}
+
+#kobolds_and_catacombs_separation {
+    margin-top: 40px;
+}
+
+.hero_power {
+    margin-bottom: 100px;
+}
+
+#four_in_one_patchwerk {
+    margin-left: -50px;
+}
+
+#four_in_one_horsemen {
+    margin-left: -80px;
+}
+
+.first, .second, .third, .fourth, .first_mid_second {
+    display: inline-block;
+}
+
+.normal_text {
+    margin-left: 72px;
+}
+
+.heroic_text {
+    margin-left: 75px;
+}
+
+.normal_heroic_patchwerk {
+    margin-bottom: -43px;
+    margin-left: 27px;
+}
+
+.normal_heroic_others {
+    margin-left: 27px;
+}
+
+.text_horsemen_blaumeux {
+    margin-left: 40px;
+}
+
+.text_horsemen_thane {
+    margin-left: 35px;
+}
+
+.text_horsemen_zeliek {
+    margin-left: 65px;
+}
+
+#boss_img {
+    margin-bottom: 40px;
+}
+
+.two_tier_normal_text {
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+}
+
+.two_tier_heroic_text {
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+    padding-top: -250px;
+}
+
+#boss_two_tier_img {
+    margin-bottom: 80px;
+}
+
+/*Footer*/
+footer {
+    background: url('images/others/line.png') repeat-x top;
+    padding-top: 25px;
+    margin-right: 100px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer h1 {
+    font-size: 1.1em;
+}
+
+#footer_line {
+
+}
+
+#read_in, #follow_hearthstone, #read_in_kobolds, #follow_hearthstone_kobolds, #door {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#read_in {
+    width: 28%;
+    padding-left: 20px;
+}
+
+#follow_hearthstone {
+    width: 35%;
+    padding-left: 100px;
+}
+
+#read_in_kobolds {
+    padding-left: 20px;
+    width: 15%;
+}
+
+#follow_hearthstone_kobolds {
+    width: 25%;
+    padding-left: 50px;
+}
+
+#door {
+    margin-left: 200px;
+    width: 180px;
+    height: 100px;
+}
+
+#coin {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*Others*/
+.hearthstone_tips {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+#hearthstone_sprite {
+    margin-left: -20px
+}
+
+#cards {
+    margin-left: -20px;
+}
+
+#treasure_goblin {
+    margin-left: 500px;
+}
+
+#formats_img {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
