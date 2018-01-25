@@ -30,7 +30,7 @@
 
 /*Body*/
 body {
-    background: url('images/others/yellow_background.png');
+    background: url('../images/others/yellow_background.png');
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
@@ -374,7 +374,7 @@ section p {
 
 /*Footer*/
 footer {
-    background: url('images/others/line.png') repeat-x top;
+    background: url('../images/others/line.png') repeat-x top;
     padding-top: 25px;
     margin-right: 100px;
 }
