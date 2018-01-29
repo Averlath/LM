@@ -4,52 +4,65 @@
         <title>El Mundo Perdido</title>
         <link rel="stylesheet" href="CSS/Examen.css" />
         <script src="Javascript/Examen.js"></script>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     </head>
     <body>
         <nav>
-            El MUNDO PERDIDO
-            SERVICIOS DE EXPEDICION
-            <a href="#">Home</a>
-            <a href="#">Servicios</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Registro</a>
-            <img src="Images/img-banner.png" />
-            UN ASOMBROSO NUEVO MUNDO
-            ¡Ven a explorar como nunca antes!
+        	<div id="nav_title">
+	            <h1>EL MUNDO PERDIDO</h1>
+	            <h2>SERVICIOS DE EXPEDICIÓN</h2>
+	        </div>
+	        <div id="nav_links">
+	            <a href="#"><p id="nav_home">Home</p></a>
+	            <a href="#"><p>Servicios</p></a>
+	            <a href="#"><p>Sobre nosotros</p></a>
+	            <a href="#"><p>Registro</p></a>
+	        </div>
+	        <div class="container">
+				<img src="Images/img-banner.png" alt="Banner" id="banner" />
+				<div class="one"><p class="inside">UN ASOMBROSO NUEVO MUNDO</p></div>
+				<div class="two"><p class="inside">Ven a explorar como nunca!</p></div>
+			</div>
         </nav>
         <main>
             <section>
                 <article>
-                    Viaje a Sudamerica
-                    Profundo en el corazón de América del Sur, descubrirás un lugar como ningún otro en el mundo. Los dinosaurios andan libres, y usted será capaz de caminar junto a Iguanodontes, Stegosauros, Allosauros, Megalosauros, y todo de los más grandes criaturas que habitan la tierra. No tenga miedo,sin embargo. Vas a tener un equipo de profesionales capacitados que guían a través del desierto traicionero.
-                    <img src="Images/img-main.png" />
+                    <h1>Viaje a Sudamerica</h1>
+                    <p>Profundo en el corazón de América del Sur, descubrirás un lugar como ningún otro en el mundo. Los dinosaurios andan libres, y usted será capaz de caminar junto a <a href="#">Iguanodontes</a>, <a href="#">Stegosauros</a>, <a href="#">Allosauros</a>, <a href="#">Megalosauros</a>, y todo de los más grandes criaturas que habitan la tierra. No tenga miedo,sin embargo. Vas a tener un equipo de profesionales capacitados que guían a través del desierto traicionero.</p>
+                    <img src="Images/img-main.png" id="main_image" alt="Main img" onclick="show()" />
                 </article>
             </section>
             <section>
                 <article>
-                    Richard Stallman, illustre evangelizador y defensor del Software Libre, fotografia tomada por Joan Ballester en Palma de Mallorca.
-                    En medio del vasto paisaje de América del Sur se encuentran varios de nuestros campings garantizados. Estos campamentos están perfectamente situados para la visualización de los dinosaurios que habitan la región. Utilizamos vehículos todoterreno como el transporte hacia y desde los sitios para acampar, así como viajar a pie a los campings más cercanos. Si usted nunca ha ido de caminata o acampado antes , ofrecemos clases de iniciación que le conseguirá preparados, además de la orientación obligatoria para todos los participantes.
-                    Si quieres llegar a la sede central del campamento en el estilo, le ofrecemos un paquete de paracaidismo para aquellos que son lo suficientemente aventureros para llegar de esta manera. Te llevaremos desde el aeropuerto, en el avión de paracaidismo, donde llega a saltar en paracaídas y derecho a la tierra en el camping central. No se preocupe, si usted no está en saltar de un avión para llegar a su destino, lo llevaremos en vehículo hasta el camping central.
+                    <p>En medio del vasto paisaje de América del Sur se encuentran varios de nuestros campings garantizados. Estos campamentos están perfectamente situados para la visualización de los dinosaurios que habitan la región. Utilizamos <a href="#">vehículos</a> <a href="#">todoterreno</a> como el transporte hacia y desde los sitios para acampar, así como viajar a pie a los campings más cercanos. Si usted nunca ha ido de caminata o acampado antes , ofrecemos clases de iniciación que le conseguirá preparados, además de la orientación obligatoria para todos los participantes.</p>
+                    <div id="div1"><p id="demo"></p></div>
+                    <p>Si quieres llegar a la sede central del campamento en el estilo, le ofrecemos un <a href="#">paquete</a> <a href="#">de</a> <a href="#">paracaidismo</a> para aquellos que son lo suficientemente aventureros para llegar de esta manera. Te llevaremos desde el aeropuerto, en el avión de paracaidismo, donde llega a saltar en paracaídas y derecho a la tierra en el camping central. No se preocupe, si usted no está en saltar de un avión para llegar a su destino, lo llevaremos en vehículo hasta el camping central.</p>
                 </article>
             </section>
             <aside>
-                RECURSOS
-                Campamentos
-                Circuitos
-                Equipamiento
-                Mapas personalizados
-                Catalogo de dinosaurios
-                Checklist de equipamiento
-                NUESTRO EQUIPO
-                <img src="Images/img-jason.jpeg" />Profesor Challenger
-                <img src="Images/img-nick.jpeg" />Ed Malone
-                <img src="Images/img-tim.jpeg" />Gomez
-                <img src="Images/img-drew.png" />Zambo
-                <img src="Images/img-justin.jpeg" />Lord John Roxton
+                <h2>RECURSOS</h2>
+                <a href="#" class="aside_links"><p class="color_change">Campamentos</p></a>
+		    	<a href="#" class="aside_links"><p class="color_change">Circuitos</p></a>
+		    	<a href="#" class="aside_links"><p class="color_change">Equipamento</p></a>
+		    	<a href="#" class="aside_links"><p class="color_change">Mapas personalizados</p></a>
+		    	<a href="#" class="aside_links"><p class="color_change">Catalogo de dinosaurios</p></a>
+		    	<a href="#" class="aside_links"><p class="color_change">Checklist del equipamento</p></a>
+                <h2>NUESTRO EQUIPO</h2>
+                <p class="aside_names"><img src="Images/img-jason.jpeg" class="aside_image" alt="Jason" />Profesor Challenger</p>
+                <p class="aside_names"><img src="Images/img-nick.jpeg" class="aside_image" alt="Nick" />Ed Malone</p>
+                <p class="aside_names"><img src="Images/img-tim.jpeg" class="aside_image" alt="Tim" />Gomez</p>
+                <p class="aside_names"><img src="Images/img-drew.png" class="aside_image" alt="Drew" />Zambo</p>
+                <p class="aside_names"><img src="Images/img-justin.jpeg" class="aside_image" alt="Justin" />Lord John Roxton</p>
             </aside>
         </main>
         <footer>
+        	<div class="footer_pos">
+	        	<a href="#" class="footer_links"><p>Condiciones de compra</p></a>
+	        	<a href="#" class="footer_links"><p>Sobre nosotros</p></a>
+	        	<a href="#" class="footer_links"><p>Deposito Legal</p></a>
+	        	<a href="#" class="footer_links"><p>FAQ</p></a>
+	        </div>
         </footer>
     </body>
 </html>
