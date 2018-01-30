@@ -69,7 +69,7 @@ section {
 	border-bottom-left-radius: 5px;
 }
 
-#Menu {
+.Menu {
 	border-bottom: solid 4px;
 	font-style: bold;
 	font-size: 1.1em;
