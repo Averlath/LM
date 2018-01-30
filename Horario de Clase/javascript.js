@@ -47,6 +47,7 @@ function siOver(obj) {
 function siOut(obj) {
 	obj.style.color = "black";
 	obj.style.fontWeight = "normal";
+}
 
 
 function libreOver(obj) {
