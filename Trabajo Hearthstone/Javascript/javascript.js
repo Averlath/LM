@@ -61,6 +61,7 @@ function lose_key(obj) {
   localStorage.setItem("status", status);
 }
 
+//Puerta
 function door(obj) {
   var status = localStorage.getItem("status");
   if (status == "true") {
