@@ -199,7 +199,7 @@ section {
     text-align: justify;
 }
 
-section h1 {
+section h1 h2 {
     font-family: 'GFSNeohellenic', Arial, sans-serif;
 }
 
@@ -208,7 +208,7 @@ section p {
     margin-right: 100px;
 }
 
-.hearthstone_icon {
+#hearthstone_icon {
     vertical-align: middle;
     margin-right: 8px;
 }
@@ -353,7 +353,7 @@ section p {
     margin-left: 65px;
 }
 
-#boss_img {
+.boss_img {
     margin-bottom: 40px;
 }
 
@@ -433,7 +433,7 @@ footer h1 {
     margin-left: 500px;
 }
 
-#formats_img {
+.formats_img {
     height: 40px;
     width: 40px;
     vertical-align: middle;

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <script src="../Javascript/javascript.js"></script>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <title>Goblins vs Gnomos</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/others/hearthstone.png">
+    </head>
+    <body onload="gvg_treasure()">
+        <div id="main_wrapper">
+            <header>
+                <img id="main_image" src="../images/others/hearthstone1.jpg" alt="main_image" />
+                <nav>
+                    <div id="nav_list">
+                        <ul class="nav_list2">
+                            <li><a href="Curse_of_NaxxramasSpanish.html" id="previous">Anterior</a></li>
+                            <li><a href="../HomeSpanish.html">Home</a></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_classes()" class="dropbtn_classes">Clases</button>
+                                <div id="mydropdown_classes" class="dropdown_content_classes">
+                                    <a href="../ClassesSpanish.html#mage">Mago</a>
+                                    <a href="../ClassesSpanish.html#hunter">Cazador</a>
+                                    <a href="../ClassesSpanish.html#paladin">Paladín</a>
+                                    <a href="../ClassesSpanish.html#warrior">Guerrero</a>
+                                    <a href="../ClassesSpanish.html#druid">Druida</a>
+                                    <a href="../ClassesSpanish.html#warlock">Brujo</a>
+                                    <a href="../ClassesSpanish.html#shaman">Chamán</a>
+                                    <a href="../ClassesSpanish.html#priest">Sacerdote</a>
+                                    <a href="../ClassesSpanish.html#rogue">Pícaro</a>
+                                </div>
+                            </div></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_expansions()" class="dropbtn_expansions">Expansiones</button>
+                                <div id="mydropdown_expansions" class="dropdown_content_expansions">
+                                    <a href="../ExpansionsSpanish.html#curse_of_naxxramas_separation">La Maldición de Naxxramas</a>
+                                    <a href="../ExpansionsSpanish.html#goblins_vs_gnomes_separation">Goblins contra Gnomos</a>
+                                    <a href="../ExpansionsSpanish.html#blackrock_mountain_separation">Montaña Rocanegra</a>
+                                    <a href="../ExpansionsSpanish.html#the_grand_tournament_separation">El Gran Torneo</a>
+                                    <a href="../ExpansionsSpanish.html#league_of_explorers_separation">Liga de Expedicionarios</a>
+                                    <a href="../ExpansionsSpanish.html#whispers_of_the_old_gods_separation">Susurros de los Dioses Antiguos</a>
+                                    <a href="../ExpansionsSpanish.html#one_night_in_karazhan_separation">Una Noche en Karazhan</a>
+                                    <a href="../ExpansionsSpanish.html#mean_streets_of_gadgetzan_separation">Mafias de Gadgetzan</a>
+                                    <a href="../ExpansionsSpanish.html#journey_to_un_goro_separation">Viaje a Un'Goro</a>
+                                    <a href="../ExpansionsSpanish.html#knights_of_the_frozen_throne_separation">Caballeros del Trono Helado</a>
+                                    <a href="../ExpansionsSpanish.html#kobolds_and_catacombs_separation">Kobolds Y Catacumbas</a>
+                                </div>
+                            </div></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_extras()" class="dropbtn_extras">Extras</button>
+                                <div id="mydropdown_extras" class="dropdown_content_extras">
+                                    <a href="../Extras/FormatsSpanish.html">Formatos</a>
+                                    <a href="../Extras/QuizSpanish.html">Quiz</a>
+                                    <a href="../Extras/BeginnersSpanish.html">Guia para principiantes</a>
+                                </div>
+                            </div></li>
+                            <li><a href="Curse_of_NaxxramasSpanish.html" id="next">Siguiente</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <h2 class="h1_names">Goblins contra Gnomos</h2>
+                <select id="select_class" onchange="my_function_gvg()">
+                    <option id="mage_option" value="select_a_class">Selecciona una clase</option>
+                    <option value="Mage">Mago</option>
+                    <option value="Hunter">Cazador</option>
+                    <option value="Paladin">Paladín</option>
+                    <option value="Warrior">Guerrero</option>
+                    <option value="Druid">Druida</option>
+                    <option value="Warlock">Brujo</option>
+                    <option value="Shaman">Chamán</option>
+                    <option value="Priest">Sacerdote</option>
+                    <option value="Rogue">Pícaro</option>
+                    <option value="Neutral">Neutral</option>
+                </select>
+                <select id="select_rarity" onchange="my_function_gvg()">
+                    <option value="select_a_rarity">Selecciona la rareza</option>
+                    <option value="Common">Común</option>
+                    <option value="Rare">Rara</option>
+                    <option value="Epic">Epica</option>
+                    <option value="Legendary">Legendaria</option>
+                </select>
+                <br /><br />
+                <img src="" id="cards_gvg" alt="cards_gvg">
+                <img src="../images/others/treasure_goblin.png" id="treasure_goblin" onclick="treasure_goblin(this)" alt="treasure_goblin" />
+            </section>
+            <footer>
+                <div id="read_in">
+                    <h1>Léelo en...</h1>
+                    <p><a href="Goblins_vs_GnomesEnglish.html">English</a></p>
+                </div>
+                <div id="follow_hearthstone">
+                    <h1>Sigue Hearthstone</h1>
+                    <img src="../images/others/follow_hearthstone_sprite.png" usemap="#hearthstone_media" alt="follow_hearthstone_sprite" />
+                    <map name="hearthstone_media">
+                        <area shape="rect" coords="10,10,50,50" href="http://www.facebook.com" title="Facebook" alt="Facebook" />
+                        <area shape="rect" coords="72,10,112,50" href="http://twitter.com" title="Twitter" alt="Twitter" />
+                        <area shape="rect" coords="134,10,176,50" href="http://youtube.com" title="YouTube" alt="YouTube" />
+                        <area shape="rect" coords="196,10,238,50" href="http://reddit.com" title="Reddit" alt="Reddit" />
+                        <area shape="rect" coords="260,10,300,50" href="http://plus.google.com" title="Google+" alt="Google+" />
+                    </map>
+                </div>
+                <img src="../images/others/coin.png" id="coin" onclick="coin(this)" alt="coin" />
+            </footer>
+        </div>
+    </body>
+</html>

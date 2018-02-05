@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../CSS/style.css" />
         <script src="../Javascript/javascript.js"></script>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
         <title>Goblins vs Gnomes</title>
         <link rel="shortcut icon" type="image/x-icon" href="../images/others/hearthstone.png">
     </head>
     <body onload="gvg_treasure()">
         <div id="main_wrapper">
             <header>
-                <img id="main_image" src="../images/others/hearthstone1.jpg" />
+                <img id="main_image" src="../images/others/hearthstone1.jpg" alt="main_image" />
                 <nav>
                     <div id="nav_list">
                         <ul class="nav_list2">
                             <li><a href="Curse_of_NaxxramasEnglish.html" id="previous">Previous</a></li>
                             <li><a href="../HomeEnglish.html">Home</a></li>
-                            <div class="dropdown">
+                            <li><div class="dropdown">
                                 <button onclick="dropdown_classes()" class="dropbtn_classes">Classes</button>
                                 <div id="mydropdown_classes" class="dropdown_content_classes">
                                     <a href="../ClassesEnglish.html#mage">Mage</a>
@@ -29,8 +30,8 @@
                                     <a href="../ClassesEnglish.html#priest">Priest</a>
                                     <a href="../ClassesEnglish.html#rogue">Rogue</a>
                                 </div>
-                            </div>
-                            <div class="dropdown">
+                            </div></li>
+                            <li><div class="dropdown">
                                 <button onclick="dropdown_expansions()" class="dropbtn_expansions">Expansions</button>
                                 <div id="mydropdown_expansions" class="dropdown_content_expansions">
                                     <a href="../ExpansionsEnglish.html#curse_of_naxxramas_separation">Curse of Naxxramas</a>
@@ -45,8 +46,8 @@
                                     <a href="../ExpansionsEnglish.html#knights_of_the_frozen_throne_separation">Knights of the Frozen Throne</a>
                                     <a href="../ExpansionsEnglish.html#kobolds_and_catacombs_separation">Kobolds and Catacombs</a>
                                 </div>
-                            </div>
-                            <div class="dropdown">
+                            </div></li>
+                            <li><div class="dropdown">
                                 <button onclick="dropdown_extras()" class="dropbtn_extras">Extras</button>
                                 <div id="mydropdown_extras" class="dropdown_content_extras">
                                     <a href="Extras/VideosEnglish.html">Videos</a>
@@ -55,13 +56,14 @@
                                     <a href="Extras/QuizEnglish.html">Quiz</a>
                                     <a href="Extras/BeginnersEnglish.html">Beginners Guide</a>
                                 </div>
+                            </div></li>
                             <li><a href="Curse_of_NaxxramasEnglish.html" id="next">Next</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
             <section>
-                <h1 class="h1_names">Goblins vs Gnomes</h1>
+                <h2 class="h1_names">Goblins vs Gnomes</h2>
                 <select id="select_class" onchange="my_function_gvg()">
                     <option id="mage_option" value="select_a_class">Select Class</option>
                     <option value="Mage">Mage</option>
@@ -83,17 +85,17 @@
                     <option value="Legendary">Legendary</option>
                 </select>
                 <br /><br />
-                <img id="cards_gvg">
-                <img src="../images/others/treasure_goblin.png" id="treasure_goblin" onclick="treasure_goblin(this)" />
+                <img src="" id="cards_gvg" alt="cards_gvg">
+                <img src="../images/others/treasure_goblin.png" id="treasure_goblin" onclick="treasure_goblin(this)" alt="treasure_goblin" />
             </section>
             <footer>
                 <div id="read_in">
                     <h1>Read in...</h1>
-                    <p><a href="#">Castellano</a></p>
+                    <p><a href="Goblins_vs_GnomesSpanish.html">Castellano</a></p>
                 </div>
                 <div id="follow_hearthstone">
                     <h1>Follow Hearthstone</h1>
-                    <img src="../images/others/follow_hearthstone_sprite.png" usemap="hearthstone_media" />
+                    <img src="../images/others/follow_hearthstone_sprite.png" usemap="#hearthstone_media" alt="follow_hearthstone_sprite" />
                     <map name="hearthstone_media">
                         <area shape="rect" coords="10,10,50,50" href="http://www.facebook.com" title="Facebook" alt="Facebook" />
                         <area shape="rect" coords="72,10,112,50" href="http://twitter.com" title="Twitter" alt="Twitter" />
@@ -102,7 +104,7 @@
                         <area shape="rect" coords="260,10,300,50" href="http://plus.google.com" title="Google+" alt="Google+" />
                     </map>
                 </div>
-                <img src="../images/others/coin.png" id="coin" onclick="coin(this)" />
+                <img src="../images/others/coin.png" id="coin" onclick="coin(this)" alt="coin" />
             </footer>
         </div>
     </body>
