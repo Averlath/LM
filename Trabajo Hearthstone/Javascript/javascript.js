@@ -1,3 +1,4 @@
+//DropdownMenu Classes
 function dropdown_classes() {
   document.getElementById("mydropdown_classes").classList.toggle("show_classes");
 }
@@ -14,6 +15,7 @@ window.onclick = function(event) {
   }
 }
 
+//DropdownMenu Expansions
 function dropdown_expansions() {
   document.getElementById("mydropdown_expansions").classList.toggle("show_expansions");
 }
@@ -30,6 +32,7 @@ window.onclick = function(event) {
   }
 }
 
+//DropdownMenu Extras
 function dropdown_extras() {
   document.getElementById("mydropdown_extras").classList.toggle("show_extras");
 }
@@ -46,6 +49,7 @@ window.onclick = function(event) {
   }
 }
 
+//Treasure Vault
 function find_key(obj) {
   var status = true;
   localStorage.setItem("status", status);
@@ -61,6 +65,7 @@ function door(obj) {
   var status = localStorage.getItem("status");
   if (status == "true") {
     alert("You've reached the Treasure Vault!");
+    window.location.replace("../images/others/treasure.jpg");
   } else {
     alert("You'll need a key to open this door!");
   }
@@ -76,6 +81,7 @@ function gvg_treasure() {
   localStorage.setItem("health", health);
 }
 
+//Treasure Goblin
 function treasure_goblin(obj) {
   var health = localStorage.getItem("health");
   health = health - 1;
@@ -88,6 +94,7 @@ function treasure_goblin(obj) {
   }
 }
 
+//GvG Cards
 function my_function_gvg() {
   var x = document.getElementById("select_class").value;
   var y = document.getElementById("select_rarity").value;
@@ -120,6 +127,7 @@ function my_function_gvg() {
   }
 }
 
+//Naxx Cards
 function my_function_naxx() {
   var x = document.getElementById("select_class").value;
   var y = document.getElementById("select_rarity").value;
@@ -150,4 +158,69 @@ function my_function_naxx() {
   } else {
   	document.getElementById("cards_naxx").src = ""
   }
+}
+
+//Quiz
+function check() {
+  var question1 = document.quiz.question1.value;
+  var question2 = document.quiz.question2.value;
+  var question3 = document.quiz.question3.value;
+  var question4 = document.quiz.question4.value;
+  var question5 = document.quiz.question5.value;
+  var question6 = document.quiz.question6.value;
+  var question7 = document.quiz.question7.value;
+  var question8 = document.quiz.question8.value;
+  var question9 = document.quiz.question9.value;
+  var question10 = document.quiz.question10.value;
+  var question11 = document.quiz.question11.value; 
+  var pictures = ["../images/others/win.gif", "../images/others/meh.jpeg", "../images/others/lose.gif"];
+  var messages = ["Great job!", "That's just okay", "You really need to do better"];
+  var correct = 0;
+  var range;
+  if (question1 == "9") {
+    correct++;
+  }
+  if (question2 == "1") {
+    correct++;
+  } 
+  if (question3 == "Tom60229") {
+    correct++;
+  }
+  if (question4 == "20+Rec") {
+    correct++;
+  }
+  if (question5 == "Todos") {
+    correct++;
+  }
+  if (question6 == "Esbirros1") {
+    correct++;
+  }
+  if (question7 == "Leeroy") {
+    correct++;
+  }
+  if (question8 == "King") {
+    correct++;
+  }
+  if (question9 == "Moroes") {
+    correct++;
+  }
+  if (question10 == "Alamuerte") {
+    correct++;
+  }
+  if (question11 == "Jade") {
+    correct++;
+  }
+  if (correct < 1) {
+    range = 2;
+  }
+  if (correct > 0 && correct < 6) {
+    range = 1;
+  }
+  if (correct > 5) {
+    range = 0;
+  }
+  document.getElementById("after_submit").style.visibility = "visible";
+  document.getElementById("message").innerHTML = messages[range];
+  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+  document.getElementById("picture").src = pictures[range];
 }

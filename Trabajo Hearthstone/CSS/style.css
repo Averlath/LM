@@ -387,7 +387,7 @@ footer h1 {
     font-size: 1.1em;
 }
 
-#read_in, #follow_hearthstone, #door {
+#read_in, #follow_hearthstone, #door, #read_in_gvg, #follow_hearthstone_gvg {
     display: inline-block;
     vertical-align: top;
 }
@@ -402,6 +402,16 @@ footer h1 {
     padding-left: 100px;
 }
 
+#read_in_gvg {
+    padding-left: 20px;
+    width: 15%;
+}
+
+#follow_hearthstone_gvg {
+    width: 25%;
+    padding-left: 50px;
+}
+
 #door {
     margin-left: 200px;
     width: 180px;
@@ -411,6 +421,76 @@ footer h1 {
 #coin {
     margin-left: 50px;
     margin-top: 20px;
+}
+
+/*Quiz*/
+input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+#quiz {
+	margin-left: 10px;
+	background: #d2def2;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+#button {
+	background: green;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+}
+
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 300px;
+	border-radius: 20px;
+	float: right;
+	font-size: 30px;
+    position: fixed;
+    display: inline;
+    margin-left: 10px;
+    bottom: 145px;
+    max-height: 500px;
+    vertical-align: top;
+}
+
+#picture {
+	width: 300px;
+	height: 245px;
+}
+
+.mc {
+	display: inline;
+}
+
+#hearthstone_quiz {
+    margin-left: 130px;
 }
 
 /*Others*/

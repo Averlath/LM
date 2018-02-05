@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <script src="../Javascript/javascript.js"></script>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <title>Hearthstone Quiz</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/others/hearthstone.png">
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header>
+                <img id="main_image" src="../images/others/hearthstone1.jpg" alt="main_image" />
+                <nav>
+                    <div id="nav_list">
+                        <ul class="nav_list3">
+                            <li><a href="../HomeSpanish.html">Home</a></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_classes()" class="dropbtn_classes">Classes</button>
+                                <div id="mydropdown_classes" class="dropdown_content_classes">
+                                    <a href="../ClassesSpanish.html#mage">Mage</a>
+                                    <a href="../ClassesSpanish.html#hunter">Hunter</a>
+                                    <a href="../ClassesSpanish.html#paladin">Paladin</a>
+                                    <a href="../ClassesSpanish.html#warrior">Warrior</a>
+                                    <a href="../ClassesSpanish.html#druid">Druid</a>
+                                    <a href="../ClassesSpanish.html#warlock">Warlock</a>
+                                    <a href="../ClassesSpanish.html#shaman">Shaman</a>
+                                    <a href="../ClassesSpanish.html#priest">Priest</a>
+                                    <a href="../ClassesSpanish.html#rogue">Rogue</a>
+                                </div>
+                            </div></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_expansions()" class="dropbtn_expansions">Expansions</button>
+                                <div id="mydropdown_expansions" class="dropdown_content_expansions">
+                                    <a href="ExpansionsEnglish.html#curse_of_naxxramas_separation">Curse of Naxxramas</a>
+                                    <a href="ExpansionsEnglish.html#goblins_vs_gnomes_separation">Goblins vs Gnomes</a>
+                                    <a href="ExpansionsEnglish.html#blackrock_mountain_separation">Blackrock Mountain</a>
+                                    <a href="ExpansionsEnglish.html#the_grand_tournament_separation">The Grand Tournament</a>
+                                    <a href="ExpansionsEnglish.html#league_of_explorers_separation">League of Explorers</a>
+                                    <a href="ExpansionsEnglish.html#whispers_of_the_old_gods_separation">Whispers of the Old Gods</a>
+                                    <a href="ExpansionsEnglish.html#one_night_in_karazhan_separation">One Night in Karazhan</a>
+                                    <a href="ExpansionsEnglish.html#mean_streets_of_gadgetzan_separation">Mean Streets of Gadgetzan</a>
+                                    <a href="ExpansionsEnglish.html#journey_to_un_goro_separation">Journey to Un'Goro</a>
+                                    <a href="ExpansionsEnglish.html#knights_of_the_frozen_throne_separation">Knights of the Frozen Throne</a>
+                                    <a href="ExpansionsEnglish.html#kobolds_and_catacombs_separation">Kobolds and Catacombs</a>
+                                </div>
+                            </div></li>
+                            <li><div class="dropdown">
+                                <button onclick="dropdown_extras()" class="dropbtn_extras">Extras</button>
+                                <div id="mydropdown_extras" class="dropdown_content_extras">
+                                    <a href="FormatsSpanish.html">Formats</a>
+                                    <a href="QuizSpanish.html">Quiz</a>
+                                    <a href="BeginnersSpanish.html">Beginners Guide</a>
+                                </div>
+                            </div></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section>
+				<h2 id="hearthstone_quiz">Hearthstone Quiz</h2>
+				<form id="quiz" name="quiz">
+					<h4 class="questions">How many classes are there in the game?</h4>
+					<input type="radio" class="mc" name="question1" value="8">8<br />
+					<input type="radio" class="mc" name="question1" value="7">7<br />
+					<input type="radio" class="mc" name="question1" value="9">9<br />
+					<h4 class="questions">How many changes has Force of Nature had?</h4>
+					<input type="radio" class="mc" name="question2" value="1">1<br />
+					<input type="radio" class="mc" name="question2" value="3">3<br />
+					<input type="radio" class="mc" name="question2" value="2">2<br />
+					<h4 class="questions">Who is the current world champion (2018)?</h4>
+					<input type="radio" class="mc" name="question3" value="Pavel">Pavel<br />
+					<input type="radio" class="mc" name="question3" value="Fr0zen">Fr0zen<br />
+					<input type="radio" class="mc" name="question3" value="Tom60229">Tom60229<br />
+					<h4 class="questions">What do you get if you are Rank 1 Legend in July?</h4>
+					<input type="radio" class="mc" name="question4" value="50Puntos">20 points for the World Cup, the same as in the other months<br />
+					<input type="radio" class="mc" name="question4" value="Recompensa">Seasonal reward only<br />
+					<input type="radio" class="mc" name="question4" value="20+Rec">Seasonal reward and 20 points for the world championship <br />
+					<h4 class="questions">Which of these minions are destroyed by Big Game Hunter?</h4>
+					<input type="radio" class="mc" name="question5" value="Todos">All of them<br />
+					<input type="radio" class="mc" name="question5" value="Boom">Dr.Boom<br />
+					<input type="radio" class="mc" name="question5" value="Alamuerte">Deathwing<br />
+					<input type="radio" class="mc" name="question5" value="Stalagg">Stalagg<br />
+					<h4 class="questions">What happens if you play the Naga sea witch and Aviana in that order?</h4>
+					<input type="radio" class="mc" name="question6" value="Cartas5">All your cards cost 5<br />
+					<input type="radio" class="mc" name="question6" value="Esbirros5">All your minions cost 5<br />
+					<input type="radio" class="mc" name="question6" value="Esbirros1">All your minions cost  1<br />
+					<h4 class="questions">What is the battlecry of Leeroy Jenkins?</h4>
+					<input type="radio" class="mc" name="question7" value="Leeroy">LEEROY JENKIIIIIINS!!!<br />
+					<input type="radio" class="mc" name="question7" value="Ready">Here, I am!<br />
+					<input type="radio" class="mc" name="question7" value="Over">I am ready to go!<br />
+					<h4 class="questions">What minion has 8/8 with charge?</h4>
+					<input type="radio" class="mc" name="question8" value="King">King Krush<br />
+					<input type="radio" class="mc" name="question8" value="Wind">Al'akir<br />
+					<input type="radio" class="mc" name="question8" value="Baine">Patches<br />
+					<h4 class="questions">What is the first legendary card you unlock in the adventure "One Night in Karazhan"?</h4>
+					<input type="radio" class="mc" name="question9" value="Knight">King Krush<br />
+					<input type="radio" class="mc" name="question9" value="Medivh">Medivh<br />
+					<input type="radio" class="mc" name="question9" value="Moroes">Moroes<br />
+					<h4 class="questions">Who is "The Incarnate Power"?</h4>
+					<input type="radio" class="mc" name="question10" value="Eye">Leeroy Jenkins<br />
+					<input type="radio" class="mc" name="question10" value="Alamuerte">Deathwing<br />
+					<input type="radio" class="mc" name="question10" value="Kel">Kel'Thuzad<br />
+					<h4 class="questions">What new deck do the Gadgetzan mafias bring for the druid?</h4>
+					<input type="radio" class="mc" name="question11" value="Aggro">Aggro<br />
+					<input type="radio" class="mc" name="question11" value="Jade">Jade Golems<br />
+					<input type="radio" class="mc" name="question11" value="Brann">Brann + Kazakus<br />
+					<input id="button" type="button" value="I'm finished!" onclick="check()">
+				</form>
+			</section>
+				<div id="after_submit">
+					<p id="number_correct"></p>
+					<p id="message"></p>
+					<img src="" id="picture" alt="picture" />
+				</div>
+			<footer>
+                <div id="read_in">
+                    <h1>Read in...</h1>
+                    <p><a href="QuizSpanish.html">Castellano</a></p>
+                </div>
+                <div id="follow_hearthstone">
+                    <h1>Follow Hearthstone</h1>
+                    <img src="../images/others/follow_hearthstone_sprite.png" usemap="#hearthstone_media" alt="follow_hearthstone_sprite" />
+                    <map name="hearthstone_media">
+                        <area shape="rect" coords="10,10,50,50" href="http://www.facebook.com" title="Facebook" alt="Facebook" />
+                        <area shape="rect" coords="72,10,112,50" href="http://twitter.com" title="Twitter" alt="Twitter" />
+                        <area shape="rect" coords="134,10,176,50" href="http://youtube.com" title="YouTube" alt="YouTube" />
+                        <area shape="rect" coords="196,10,238,50" href="http://reddit.com" title="Reddit" alt="Reddit" />
+                        <area shape="rect" coords="260,10,300,50" href="http://plus.google.com" title="Google+" alt="Google+" />
+                    </map>
+                </div>
+            </footer>
+        </div>
+	</body>
+</html>
+ 
