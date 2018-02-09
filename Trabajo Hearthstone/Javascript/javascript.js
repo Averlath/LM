@@ -50,10 +50,16 @@ window.onclick = function(event) {
 }
 
 //Treasure Vault
-function find_key(obj) {
+function find_key_english(obj) {
   var status = true;
   localStorage.setItem("status", status);
   alert("You've found the key! Now you just have to find the door!");
+}
+
+function find_key_spanish(obj) {
+  var status = true;
+  localStorage.setItem("status", status);
+  alert("Has encontrado la llave! Ahora solo te queda encontrar la puerta!");
 }
 
 function lose_key(obj) {
@@ -62,7 +68,7 @@ function lose_key(obj) {
 }
 
 //Puerta
-function door(obj) {
+function door_english(obj) {
   var status = localStorage.getItem("status");
   if (status == "true") {
     alert("You've reached the Treasure Vault!");
@@ -72,24 +78,56 @@ function door(obj) {
   }
 }
 
-function coin(obj) {
+function door_spanish(obj) {
+  var status = localStorage.getItem("status");
+  if (status == "true") {
+    alert("Has llegado al Treasure Vault!");
+    window.location.replace("../images/others/treasure.jpg");
+  } else {
+    alert("Necesitarás una llave para abrir esa puerta!");
+  }
+}
+
+function coin_english(obj) {
   alert("You've found a coin from the treasure!");
 }
 
-function gvg_treasure() {
+function coin_spanish(obj) {
+  alert("Has encontrado una moneda del tesoro!");
+}
+
+function gvg_treasure_english() {
   alert("There's a Treasure Goblin here! Click on it to kill it!");
   var health = 5;
   localStorage.setItem("health", health);
 }
 
+function gvg_treasure_spanish() {
+  alert("Aquí hay un Treasure Goblin! Haz click sobre él para matarlo!");
+  var health = 5;
+  localStorage.setItem("health", health);
+}
+
 //Treasure Goblin
-function treasure_goblin(obj) {
+function treasure_goblin_english(obj) {
   var health = localStorage.getItem("health");
   health = health - 1;
   localStorage.setItem("health", health);
   if (health == 0) {
     document.getElementById('treasure_goblin').remove();
     alert("You've defeated the Treasure Goblin!");
+  } else {
+    health = health;
+  }
+}
+
+function treasure_goblin_spanish(obj) {
+  var health = localStorage.getItem("health");
+  health = health - 1;
+  localStorage.setItem("health", health);
+  if (health == 0) {
+    document.getElementById('treasure_goblin').remove();
+    alert("Has derrotado al Treasure Goblin!");
   } else {
     health = health;
   }

@@ -228,6 +228,7 @@ section p {
 .classes_img {
     width: 150px;
     float: left;
+    text-decoration: none;
 }
 
 .classes_h {
