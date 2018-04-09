@@ -1,5 +1,5 @@
 window.onload=function() {
-	readXML();
+	//readXML();
 	document.getElementById("mark").style.display = "none";
 	document.getElementById("sure").style.display = "none";
 	document.getElementById("questions").style.display = "none";
