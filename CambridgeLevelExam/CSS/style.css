@@ -1,0 +1,165 @@
+/*Body*/
+body {
+    background: url('../images/yellow_background.png');
+}
+
+#main_wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+#img_english {
+    margin-left: 50px;
+    margin-top: 5px;
+    height: 10%;
+    position: relative;
+    margin-bottom: 25px;
+    width: 800px;
+}
+
+/*Navigation*/
+nav a {
+    display: inline-block;
+    color: black;
+    font-size: 1.4em;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+    border: 2px solid;
+    border-color: blue;
+    background-color: orange;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: teal;
+}
+
+#blank:hover {
+    color: black;
+}
+
+nav h1 {
+    font-size: 2.5em;
+    margin-left: 50px;
+    text-align: center;
+}
+
+nav h2 {
+    font-size: 0.9em;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+
+#navigation {
+    margin-left: 160px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/*Main Home*/
+#welcome {
+    text-align: justify;
+    font-size: 1.4em;
+    color: darkblue;
+}
+
+#welcome h1 {
+    text-align: center;
+}
+
+/*Main Instructions*/
+main li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#instructions {
+    text-align: justify;
+    font-size: 1.2em;
+    color: darkblue;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#instructions h1 {
+    text-align: center;
+}
+
+/*Main Test*/
+form {
+    margin-left: 300px;
+}
+
+#clock {
+    width: 180px;
+    float: left;
+    border: solid 2px;
+    border-color: darkblue;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: darkblue;
+}
+
+#timer {
+    margin-bottom: 20px;
+}
+
+#button {
+    margin:auto;
+}
+
+#buttonyes {
+    margin-right: 15px;
+}
+
+#mark {
+    width: 180px;
+    float: left;
+    border: solid 2px;
+    border-color: darkblue;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: darkblue;
+}
+
+#identification {
+    margin-left: 370px;
+    margin-top: 50px;
+    width: 173px;
+}
+
+#identification h2 {
+    text-align: center;
+}
+
+#buttontest, #buttonclear {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#questions {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+

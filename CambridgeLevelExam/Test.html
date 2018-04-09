@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="English">
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="Javascript/javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <div id="main_wrapper">
+        <nav>
+            <h1><img src="images/logo.png" id="logo">University of Cambridge English Level Test</h1>
+            <div id="navigation">
+                <a href="Home.html">Home</a>
+                <a href="Instructions.html">Test instructions</a>
+                <a id="blank">Test</a>
+            </div>
+        </nav>
+        <main>
+            <div id="clock">
+                <h3>Time Remaining</h3>
+                <div id="timer">00:25:00</div>
+                <input type="button" value="Submit Test" id="button" onclick="submit(this)">
+                <div id="sure">
+                    <h3>Are you sure?</h3>
+                    <input type="button" value="Yes" id="buttonyes" onclick="submityes(this)">
+                    <input type="button" value="No" id="buttonno" onclick="submitno(this)">
+                </div>
+            </div>
+            <div id="mark">
+                <h3>Correct Answers:</h3>
+                <h4>number</h4>
+                <h3>Incorrect Answers:</h3>
+                <h4>number</h4>
+                <h3>Level:</h3>
+                <h4>level</h4>
+            </div>
+            <div id="identification">
+                <h2>Name</h2>
+                <input type="Text" id="textname">
+                <h2>Last Name</h2>
+                <input type="Text" id="textlast">
+                <h2>E-mail Address</h2>
+                <input type="Text" id="address">
+                <br>
+                <input type="button" value="Submit" id="buttontest" onclick="submitinfo(this)">
+                <input type="button" value="Clear" id="buttonclear" onclick="clearinfo(this)">
+            </div>
+            <form>
+                <div id="questions">
+                    <h2>Question 1</h2>
+                    <h3>a</h3>
+                    <span id='t1'></span>
+                    <input type="text">
+                    <h2>Question 2</h2>
+                    <h3>a</h3>
+                    <span id='t2'></span>
+                    <input type="text">
+                    <h2>Question 3</h2>
+                    <h3>a</h3>
+                    <span id='t3'></span>
+                    <select>
+                        <option>Choose one...</option>
+                    </select>
+                    <h2>Question 4</h2>
+                    <h3>a</h3>
+                    <span id='t4'></span>
+                    <select>
+                        <option>Choose one...</option>
+                    </select>
+                    <h2>Question 5</h2>
+                    <h3>a</h3>
+                    <span id='t5'></span>
+                    <select multiple>
+                        <option>Choose one...</option>
+                    </select>
+                    <h2>Question 6</h2>
+                    <h3>a</h3>
+                    <span id='t6'></span>
+                    <select multiple>
+                        <option>Choose one..</option>
+                    </select>
+                    <h2>Question 7</h2>
+                    <h3>a</h3>
+                    <div class="checkbox" id="checkbox1"></div>
+                    <p id="r7"></p>
+                    <p id="t7"></p>
+                    <h2>Question 8</h2>
+                    <h3>a</h3>
+                    <div class="checkbox" id="checkbox2"></div>
+                    <p id="r8"></p>
+                    <p id="t8"></p>
+                    <h2>Question 9</h2>
+                    <h3>a</h3>
+                    <div class="radio" id="radio1"></div>
+                    <p id="r9"></p>
+                    <p id="t9"></p>
+                    <h2>Question 10</h2>
+                    <h3 id="change">a</h3>
+                    <div class="radio" id="radio2"></div>
+                    <p id="r10"></p>
+                    <p id="t10"></p>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
