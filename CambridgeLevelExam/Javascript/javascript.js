@@ -81,8 +81,9 @@ function submitno (obj) {
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(xhttp.responseText, "text/xml");
             question = xmlDoc.getElementsByTagName("Question");
+            repararPreguntasRandom();
         }
     };
-    xhttp.open("GET", "./xml/xml.xml", true);
+    xhttp.open("GET", "./XML/xml.xml", true);
     xhttp.send();
 }*/
