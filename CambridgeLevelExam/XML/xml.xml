@@ -1,400 +1,203 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Questions>
-  <Question id="t1" Text="(Where did I park the car?) I can't remember ... the car.">
+  <Question id="t1">
+  	<Title>(Where did I park the car?) I can't remember ... the car.</Title>
     <Type>Textfield</Type>
     <Answer>where I parked</Answer>
   </Question>
-  <Question id="t2" Text="My hair is longer than ... (you).">
-    <Type>Textfield</Type>
-    <Answer>yours</Answer>
-  </Question>
-  <Question id="t3" Text="Very young children shouldn't go swimming by ....">
+  <Question id="t2">
+  	<Title>Very young children shouldn't go swimming by ....</Title>
     <Type>Textfield</Type>
     <Answer>themselves</Answer>
   </Question>
-  <Question id="t4" Text="I can't go any further. I'm ... (sit) on that bench for a while.">
-    <Type>Textfield</Type>
-    <Answer>going to sit</Answer>
-  </Question>
-  <Question id="t5" Text="The river ... (flow) very quickly today, much faster than usual.">
+  <Question id="t3">
+  	<Title>The river ... (flow) very quickly today, much faster than usual.</Title>
     <Type>Textfield</Type>
     <Answer>is flowing</Answer>
   </Question>
-  <Question id="t6" Text="Why are you filling that bucket with water? - ... the car. (I/to wash)">
-    <Type>Textfield</Type>
-    <Answer>I am going to wash</Answer>
-  </Question>
-  <Question id="t7" Text="Call me after eight o'clock, we ... dinner by then. (finish)">
+  <Question id="t4">
+  	<Title>Call me after eight o'clock, we ... dinner by then. (finish)</Title>
     <Type>Textfield</Type>
     <Answer>will have finished</Answer>
   </Question>
-  <Question id="t8" Text="'You really must stay a little longer', she said. She insisted that i ... a little longer.">
-    <Type>Textfield</Type>
-    <Answer>stay</Answer>
-  </Question>
-  <Question id="t9" Text="Kevin'll do well in the job ... he stays on the right side of his boss.">
+  <Question id="t5">
+  	<Title>Kevin'll do well in the job ... he stays on the right side of his boss.</Title>
     <Type>Textfield</Type>
     <Answer>as long as</Answer>
   </Question>
-  <Question id="t10" Text="We promised to keep in touch, ... happened to us in life. // Answer with only 1 word.">
-    <Type>Textfield</Type>
-    <Answer>whatever</Answer>
-  </Question>
 
 
-  <Question id="r1" Text="We were the only guests at the hotel.">
+  <Question id="r1">
+  	<Title>We were the only guests at the hotel.</Title>
     <Type>Radio</Type>
     <Option>Nobody else had stayed there</Option>
-    <Option>Nobody else was staying there</Option>
+    <Option correct="true">Nobody else was staying there</Option>
     <Option>Nobody else even stayed there</Option>
     <Option>Nobody else stayed there</Option>
-    <Answer>2</Answer>
   </Question>
-  <Question id="r2" Text="... your new job?">
-    <Type>Radio</Type>
-    <Option>Are you liked by</Option>
-    <Option>Do you like</Option>
-    <Option>Like</Option>
-    <Option>You like</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="r3" Text="House prices are very high. They've ... a lot in the last few years.">
+  <Question id="r2">
+  	<Title>House prices are very high. They've ... a lot in the last few years.</Title>
     <Type>Radio</Type>
     <Option>going up</Option>
     <Option>will go up</Option>
     <Option>will have gone up</Option>
-    <Option>gone up</Option>
-    <Answer>4</Answer>
+    <Option correct="true">gone up</Option>
   </Question>
-  <Question id="r4" Text="A bus goes to the airport. It arrives every half hour.">
+  <Question id="r3">
+  	<Title>There was so much traffic, I was lucky to get ... the road without being kocked over.</Title>
     <Type>Radio</Type>
-    <Option>The bus, that goes to the airport, arrives every half hour.</Option>
-    <Option>The bus arrives every half hour, which goes to the airport.</Option>
-    <Option>The bus which goes to the airport arrives every half hour.</Option>
-    <Option>The bus goes to the airport which arrives every half hour.</Option>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="r5" Text="There was so much traffic, I was lucky to get ... the road without being kocked over.">
-    <Type>Radio</Type>
-    <Option>Across</Option>
+    <Option correct="true">Across</Option>
     <Option>Over</Option>
     <Option>Through</Option>
     <Option>Along</Option>
-    <Answer>1</Answer>
   </Question>
-  <Question id="r6" Text="What is the plural of 'knife'?">
-    <Type>Radio</Type>
-    <Option>knifes</Option>
-    <Option>knive</Option>
-    <Option>knifen</Option>
-    <Option>knives</Option>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="r7" Text="If you can win his attention ... for you.">
-    <Type>Radio</Type>
-    <Option>the better so much</Option>
-    <Option>so much the better</Option>
-    <Option>the so much better</Option>
-    <Option>so the much better</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="r8" Text="Long ... and so continue winning all its matches!">
-    <Type>Radio</Type>
-    <Option>may our team flourish</Option>
-    <Option>our team may flourish</Option>
-    <Option>our team flourish may</Option>
-    <Option>may flourish our team</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="r9" Text="The fresco is a dynamic work because, by capturing the energy, humanity, and collective achievement of 
-    the Detroit workers, celebrates all working men and women. (Which of the following alternatives is best to replace 'because'?)">
+  <Question id="r4">
+  	<Title>The fresco is a dynamic work because, by capturing the energy, humanity, and collective achievement of the Detroit workers, celebrates all working men and women. (Which of the following alternatives is best to replace 'because'?)</Title>
     <Type>Radio</Type>
     <Option>No change, leave it as it is.</Option>
-    <Option>Replace it with: that</Option>
-    <Option>Replace it with: which</Option>
     <Option>Replace it with: that was</Option>
-    <Answer>2</Answer>
+    <Option>Replace it with: which</Option>
+    <Option correct="true">Replace it with: that</Option>
   </Question>
-  <Question id="r10" Text="We talked just as easily as we had in the past, when we would sit in the field behind Joan’s house atop the rabbit hutch and discuss our friends and our hopes for the future. (Which of the following alternatives is best to replace 'in the field behind Joan’s house atop the rabbit hutch'?)">
+  <Question id="r5">
+  	<Title>We talked just as easily as we had in the past, when we would sit in the field behind Joan’s house atop the rabbit hutch and discuss our friends and our hopes for the future. (Which of the following alternatives is best to replace 'in the field behind Joan’s house atop the rabbit hutch'?)</Title>
     <Type>Radio</Type>
     <Option>No change, leave it as it is.</Option>
     <Option>Replace it with: in the field atop the rabbit hutch behind Joan’s house</Option>
     <Option>Replace it with: atop the rabbit hutch in the field behind Joan’s house</Option>
-    <Option>Replace it with: behind Joan’s house in the field atop the rabbit hutch</Option>
-    <Answer>3</Answer>
+    <Option correct="true">Replace it with: behind Joan’s house in the field atop the rabbit hutch</Option>
   </Question>
 
 
-  <Question id="d1" Text="Did you have any problems ... our house?">
-    <Type>MultipleSelect</Type>
-    <Option>find</Option>
-    <Option>to find</Option>
-    <Option>finding</Option>
-    <Option>for finding</Option>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="d2" Text="It's a great place to live apart from the increasing volume of ... that passes under my window every 
+  <Question id="d1">
+  	<Title>It's a great place to live apart from the increasing volume of ... that passes under my window ever</Title>
     day.">
-    <Type>MultipleSelect</Type>
+    <Type>DropDown</Type>
+    <Option>Choose...</Option>
     <Option>transport</Option>
-    <Option>traffic</Option>
+    <Option correct="true">traffic</Option>
     <Option>vehicles</Option>
     <Option>circulation</Option>
-    <Answer>2</Answer>
   </Question>
-  <Question id="d3" Text="I'm sorry, but he's already ....">
-    <Type>MultipleSelect</Type>
+  <Question id="d2">
+  	<Title>I'm sorry, but he's already ....</Title>
+    <Type>DropDown</Type>
+    <Option>Choose...</Option>
     <Option>made</Option>
     <Option>left</Option>
-    <Option>gone</Option>
+    <Option correct="true">gone</Option>
     <Option>had</Option>
-    <Answer>3</Answer>
   </Question>
-  <Question id="d4" Text="I can't see anything in this ....">
-    <Type>MultipleSelect</Type>
-    <Option>dark</Option>
-    <Option>darker</Option>
-    <Option>darkness</Option>
-    <Option>darken</Option>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="d5" Text="... harshly he may speak to you, you can be sure that he has only your best interests at heart.">
-    <Type>MultipleSelect</Type>
+  <Question id="d3">
+  	<Title>... harshly he may speak to you, you can be sure that he has only your best interests at heart.</Title>
+    <Type>DropDown</Type>
+    <Option>Choose...</Option>
     <Option>Whereas</Option>
     <Option>Although</Option>
     <Option>Whether</Option>
-    <Option>However</Option>
-    <Answer>4</Answer>
+    <Option correct="true">However</Option>
   </Question>
-  <Question id="d6" Text="... you open the window please?">
-    <Type>MultipleSelect</Type>
-    <Option>May</Option>
-    <Option>Would</Option>
-    <Option>Do</Option>
-    <Option>Shall</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="d7" Text="The findings of the survey ... contrary to what was expected.">
-    <Type>MultipleSelect</Type>
+  <Question id="d4">
+  	<Title>The findings of the survey ... contrary to what was expected.</Title>
+    <Type>DropDown</Type>
+    <Option>Choose...</Option>
     <Option>went</Option>
     <Option>made</Option>
     <Option>turned</Option>
-    <Option>ran</Option>
-    <Answer>4</Answer>
+    <Option correct="true">ran</Option>
   </Question>
-  <Question id="d8" Text="Close the windows, the plants don't ... the cold.">
-    <Type>MultipleSelect</Type>
-    <Option>resist</Option>
-    <Option>stand</Option>
-    <Option>tolerates</Option>
-    <Option>liking</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="d9" Text="Local residents ... objected to the plans to build a supermarket where there is currently a beautiful 
+  <Question id="d5">
+  	<Title>Local residents ... objected to the plans to build a supermarket where there is currently a beautifu</Title>
     park.">
-    <Type>MultipleSelect</Type>
+    <Type>DropDown</Type>
+    <Option>Choose...</Option>
+    <Option correct="true">strenuously</Option>
     <Option>harshly</Option>
-    <Option>strenuously</Option>
     <Option>roundly</Option>
     <Option>severely</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="d10" Text="Try as i ..., I couldn't turn the key.">
-    <Type>MultipleSelect</Type>
-    <Option>should</Option>
-    <Option>could</Option>
-    <Option>might</Option>
-    <Option>would</Option>
-    <Answer>3</Answer>
   </Question>
 
 
-  <Question id="c1" Text="Chocolate is my ... weakness.">
+  <Question id="c1">
+  	<Title>Later, in Rome, I was to meet Professor Taylor...</Title>
     <Type>Checkbox</Type>
-    <Option>biggest</Option>
-    <Option>enormous</Option>
-    <Option>greatest</Option>
-    <Option>strongest</Option>
-    <Answer>1</Answer>
-    <Answer>3</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="c2" Text="Is that boy Mary's son?">
-    <Type>Checkbox</Type>
-    <Option>Yes, he is.</Option>
-    <Option>Yes, that's Robert.</Option>
-    <Option>No, he's not Robert.</Option>
-    <Option>Yes, he is not.</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="c3" Text="A. Kirsten is coming to the party tonight. B. Is she? I thought you said she ...?">
-    <Type>Checkbox</Type>
-    <Option>couldm't come</Option>
-    <Option>was going to come</Option>
-    <Option>Wasn't going to come</Option>
-    <Option>Would be able to come</Option>
-    <Answer>1</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="c4" Text="Later, in Rome, I was to meet Professor Taylor...">
-    <Type>Checkbox</Type>
-    <Option>but he had left before I got there.</Option>
+    <Option correct="true">but he had left before I got there.</Option>
     <Option>and was very impressed by his knowledge.</Option>
     <Option>but he was really nice.</Option>
-    <Option>but he's gone now.</Option>
-    <Answer>1</Answer>
-    <Answer>4</Answer>
+    <Option correct="true">but he's gone now.</Option>
   </Question>
-  <Question id="c5" Text="Which word form of 'think' is not correct?">
+  <Question id="c2">
+  	<Title>Which word form of 'think' is not correct?</Title>
     <Type>Checkbox</Type>
-    <Option>taught</Option>
-    <Option>though</Option>
+    <Option correct="true">taught</Option>
+    <Option correct="true">though</Option>
     <Option>thought</Option>
     <Option>thinking</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
   </Question>
-  <Question id="c6" Text="I wouldn't do that ....">
+  <Question id="c3">
+  	<Title>I wouldn't do that ....</Title>
     <Type>Checkbox</Type>
     <Option>so fastly</Option>
-    <Option>without first reading the manual</Option>
-    <Option>so quickly</Option>
-    <Option>if I were you</Option>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
-    <Answer>4</Answer>
+    <Option correct="true">without first reading the manual</Option>
+    <Option correct="true">so quickly</Option>
+    <Option correct="true">if I were you</Option>
   </Question>
-  <Question id="c7" Text="They didn't want to come with us at first, but we ... persuade them.">
+  <Question id="c4">
+  	<Title>They didn't want to come with us at first, but we ... persuade them.</Title>
     <Type>Checkbox</Type>
-    <Option>managed to</Option>
+    <Option correct="true">managed to</Option>
     <Option>could</Option>
     <Option>didn't</Option>
-    <Option>were able to</Option>
-    <Answer>1</Answer>
-    <Answer>4</Answer>
+    <Option correct="true">were able to</Option>
   </Question>
-  <Question id="c8" Text="His grandfather often dozes ... in front of the TV.">
-    <Type>Checkbox</Type>
-    <Option>on</Option>
-    <Option>off</Option>
-    <Option>out</Option>
-    <Option>down</Option>
-    <Answer>2</Answer>
-  </Question>
-  <Question id="c9" Text="My daughter is planning to spend a year before university working in Australia, ... seems to me to be a sensible idea.">
-    <Type>Checkbox</Type>
-    <Option>what</Option>
-    <Option>that</Option>
-    <Option>which</Option>
-    <Option>where</Option>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="c10" Text="Which sentences are correct?">
+  <Question id="c5">
+  	<Title>Which sentences are correct?</Title>
     <Type>Checkbox</Type>
     <Option>Problem with bureacracies is that they just grow and grow.</Option>
-    <Option>They never shrink.</Option>
-    <Option>Has anyone ever heard of a government who lowered taxes?</Option>
+    <Option correct="true">They never shrink.</Option>
+    <Option correct="true">Has anyone ever heard of a government who lowered taxes?</Option>
     <Option>And any government does get more efficient?</Option>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
   </Question>
 
 
-  <Question id="m1" Text="... tired from working so much?">
-    <Type>DropDown</Type>
-    <Option>Do you</Option>
-    <Option>Are you</Option>
-    <Option>Don't you get</Option>
-    <Option>Aren't you</Option>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
-    <Answer>4</Answer>
+  <Question id="m1">
+  	<Title>Anna told me a very ... story.</Title>
+    <Type>Cascade</Type>
+    <Option correct="true">interesting</Option>
+    <Option>funnily</Option>
+    <Option>sadly</Option>
+    <Option>scarily</Option>
   </Question>
-  <Question id="m2" Text="I'm having dinner with ... tonight.">
-    <Type>DropDown</Type>
-    <Option>them</Option>
-    <Option>you</Option>
-    <Option>his</Option>
-    <Option>my boss</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="m3" Text="Anna told me a very ... story.">
-    <Type>DropDown</Type>
-    <Option>interesting</Option>
-    <Option>funny</Option>
-    <Option>sad</Option>
-    <Option>scary</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="m4" Text="Which word form of 'danger' is not correct?">
-    <Type>DropDown</Type>
+  <Question id="m2">
+  	<Title>Which word form of 'danger' is not correct?</Title>
+    <Type>Cascade</Type>
     <Option>dangerous</Option>
-    <Option>dangered</Option>
+    <Option>dangerless</Option>
     <Option>endanger</Option>
-    <Option>dangerfully</Option>
-    <Answer>2</Answer>
-    <Answer>4</Answer>
+    <Option correct="true">dangerfully</Option>
   </Question>
-  <Question id="m5" Text="I didn't expect the ground ... so much under my feet.">
-    <Type>DropDown</Type>
+  <Question id="m3">
+  	<Title>I didn't expect the ground ... so much under my feet.</Title>
+    <Type>Cascade</Type>
     <Option>to moved</Option>
     <Option>to move</Option>
     <Option>to yield</Option>
-    <Option>to give</Option>
-    <Answer>4</Answer>
+    <Option correct="true">to give</Option>
   </Question>
-  <Question id="m6" Text="He really ... quit smoking if he wants to live long.">
-    <Type>DropDown</Type>
-    <Option>ought to</Option>
-    <Option>should</Option>
-    <Option>has to</Option>
-    <Option>must</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
-    <Answer>3</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="m7" Text="This time next week I won't be in the office. ... on a beach in Spain.">
-    <Type>DropDown</Type>
-    <Option>I'll be</Option>
-    <Option>I'll be lying</Option>
+  <Question id="m4">
+  	<Title>This time next week I won't be in the office. ... on a beach in Spain.</Title>
+    <Type>Cascade</Type>
+    <Option>I'll</Option>
+    <Option correct="true">I'll be lying</Option>
     <Option>I'm lying</Option>
     <Option>I'll have lain</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
   </Question>
-  <Question id="m8" Text="When I first came to Britain it took me a long time to ... on the left.">
-    <Type>DropDown</Type>
-    <Option>get used to drive</Option>
-    <Option>be used to driving</Option>
-    <Option>get used to driving</Option>
-    <Option>get used to drive</Option>
-    <Answer>3</Answer>
-  </Question>
-  <Question id="m9" Text="When we get to the border, we ... show our passports.">
-    <Type>DropDown</Type>
-    <Option>have to</Option>
-    <Option>should</Option>
-    <Option>have</Option>
-    <Option>must</Option>
-    <Answer>1</Answer>
-    <Answer>2</Answer>
-    <Answer>4</Answer>
-  </Question>
-  <Question id="m10" Text="When we get to Thailand, ....">
-    <Type>DropDown</Type>
-    <Option>we'll be eating in restaurants every night.</Option>
+  <Question id="m5">
+  	<Title>When we get to Thailand, ....</Title>
+    <Type>Cascade</Type>
+    <Option>we'll be eating in restaurants again.</Option>
     <Option>you'll able to buy sandals like mine.</Option>
-    <Option>we may have to hire a boat to take us out to the islands.</Option>
+    <Option correct="true">we may have to hire a boat to take us out to the islands.</Option>
     <Option>we'll already have used up half your vacation.</Option>
-    <Answer>1</Answer>
-    <Answer>3</Answer>
   </Question>
 </Questions>

@@ -21,7 +21,7 @@
         <main>
             <div id="clock">
                 <h3>Time Remaining</h3>
-                <div id="timer">00:25:00</div>
+                <div id="timer">00:15:00</div>
                 <input type="button" value="Submit Test" id="button" onclick="submit(this)">
                 <div id="sure">
                     <h3>Are you sure?</h3>
@@ -31,11 +31,11 @@
             </div>
             <div id="mark">
                 <h3>Correct Answers:</h3>
-                <h4>number</h4>
+                <h4 id="correct"></h4>
                 <h3>Incorrect Answers:</h3>
-                <h4>number</h4>
+                <h4 id="incorrect"></h4>
                 <h3>Level:</h3>
-                <h4>level</h4>
+                <h4 id="level"></h4>
             </div>
             <div id="identification">
                 <h2>Name</h2>
@@ -48,61 +48,10 @@
                 <input type="button" value="Submit" id="buttontest" onclick="submitinfo(this)">
                 <input type="button" value="Clear" id="buttonclear" onclick="clearinfo(this)">
             </div>
-            <form>
-                <div id="questions">
-                    <h2>Question 1</h2>
-                    <h3>a</h3>
-                    <span id='t1'></span>
-                    <input type="text">
-                    <h2>Question 2</h2>
-                    <h3>a</h3>
-                    <span id='t2'></span>
-                    <input type="text">
-                    <h2>Question 3</h2>
-                    <h3>a</h3>
-                    <span id='t3'></span>
-                    <select>
-                        <option>Choose one...</option>
-                    </select>
-                    <h2>Question 4</h2>
-                    <h3>a</h3>
-                    <span id='t4'></span>
-                    <select>
-                        <option>Choose one...</option>
-                    </select>
-                    <h2>Question 5</h2>
-                    <h3>a</h3>
-                    <span id='t5'></span>
-                    <select multiple>
-                        <option>Choose one...</option>
-                    </select>
-                    <h2>Question 6</h2>
-                    <h3>a</h3>
-                    <span id='t6'></span>
-                    <select multiple>
-                        <option>Choose one..</option>
-                    </select>
-                    <h2>Question 7</h2>
-                    <h3>a</h3>
-                    <div class="checkbox" id="checkbox1"></div>
-                    <p id="r7"></p>
-                    <p id="t7"></p>
-                    <h2>Question 8</h2>
-                    <h3>a</h3>
-                    <div class="checkbox" id="checkbox2"></div>
-                    <p id="r8"></p>
-                    <p id="t8"></p>
-                    <h2>Question 9</h2>
-                    <h3>a</h3>
-                    <div class="radio" id="radio1"></div>
-                    <p id="r9"></p>
-                    <p id="t9"></p>
-                    <h2>Question 10</h2>
-                    <h3 id="change">a</h3>
-                    <div class="radio" id="radio2"></div>
-                    <p id="r10"></p>
-                    <p id="t10"></p>
-                </div>
+            <div id="visualize">
+                <input type="button" value="Count" id="buttoncount" onclick="visualize(this)">
+            </div>
+            <form id="form">
             </form>
         </main>
     </div>
