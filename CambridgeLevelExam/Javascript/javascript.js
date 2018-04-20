@@ -64,7 +64,7 @@ function startTimer() {
 			EndExam();
 		}
 		second--;
-	}, 1000);
+	}, 1);
 }
 
 function EndExam() {
