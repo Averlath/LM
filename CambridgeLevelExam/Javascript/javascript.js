@@ -69,6 +69,7 @@ function startTimer() {
 function EndExam() {
 	document.getElementById("visualize").style.display = "block";
 	document.getElementById("clock").style.display = "none";
+	readOnly();
 	alert("Time is up.");
 }
 
@@ -85,6 +86,7 @@ function submityes(obj) {
 	document.getElementById("visualize").style.display = "block";
 	document.getElementById("clock").style.display = "none";
 	checkCall();
+	readOnly();
 }
 
 function submitno (obj) {
@@ -96,6 +98,11 @@ function visualize(obj) {
 	document.getElementById("visualize").style.display = "none";
 	document.getElementById("mark").style.display = "block";
 	totalPoints();
+}
+
+function readOnly() {
+	alert('hi');
+	document.getElementById("fieldset").disabled = true;
 }
 
 function Questions() {
@@ -356,6 +363,8 @@ function checkRadio(i) {
 			} else {
 				document.getElementById("div" + i).style.color = "red";
 			}
+		} else {
+			document.getElementById("div" + i).style.color = "red";
 		}
 	}
 }
@@ -417,6 +426,8 @@ function checkCascade(i) {
 			} else {
 				document.getElementById("div" + i).style.color = "red";
 			}
+		} else {
+			document.getElementById("div" + i).style.color = "red";
 		}
 	}
 }
