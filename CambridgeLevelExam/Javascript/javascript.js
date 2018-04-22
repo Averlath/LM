@@ -339,9 +339,9 @@ function checkTextfield(i) {
 
 	if (answer == userAnswer) {
 		correct++;
-		document.getElementById("div" + x).style.color = "green";
+		document.getElementById("div" + i).style.color = "green";
 	} else {
-		document.getElementById("div" + x).style.color = "red";
+		document.getElementById("div" + i).style.color = "red";
 	}
 }
 
@@ -352,9 +352,9 @@ function checkRadio(i) {
 			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Option")[rb[j].getAttribute("value")].getAttribute("correct");
 			if (answer) {
 				correct++;
-				document.getElementById("div" + x).style.color = "green";
+				document.getElementById("div" + i).style.color = "green";
 			} else {
-				document.getElementById("div" + x).style.color = "red";
+				document.getElementById("div" + i).style.color = "red";
 			}
 		}
 	}
@@ -368,9 +368,9 @@ function checkDropDown(i) {
 
 			if (answer) {
 				correct++;
-				document.getElementById("div" + x).style.color = "green";
+				document.getElementById("div" + i).style.color = "green";
 			} else {
-				document.getElementById("div" + x).style.color = "red";
+				document.getElementById("div" + i).style.color = "red";
 			}
 		}
 	}
@@ -399,9 +399,9 @@ function checkCheckbox(i) {
 
 	if (selectedCorrect === totalCorrect && totalCorrect === totalSelected) {
 		correct++;
-		document.getElementById("div" + x).style.color = "green";
+		document.getElementById("div" + i).style.color = "green";
 	} else {
-		document.getElementById("div" + x).style.color = "red";
+		document.getElementById("div" + i).style.color = "red";
 	}
 }
 
@@ -413,9 +413,9 @@ function checkCascade(i) {
 
 			if (answer) {
 				correct++;
-				document.getElementById("div" + x).style.color = "green";
+				document.getElementById("div" + i).style.color = "green";
 			} else {
-				document.getElementById("div" + x).style.color = "red";
+				document.getElementById("div" + i).style.color = "red";
 			}
 		}
 	}
@@ -424,15 +424,15 @@ function checkCascade(i) {
 function totalPoints() {
 	document.getElementById("correct").innerHTML = correct;
 	document.getElementById("incorrect").innerHTML = totalQuestions - correct;
-	if (correct <= 3) {
+	if (correct <= 5) {
 		document.getElementById("level").innerHTML = "A1";
-	} else if (correct <= 7) {
+	} else if (correct <= 10) {
 		document.getElementById("level").innerHTML = "A2";
-	} else if (correct <= 11) {
-		document.getElementById("level").innerHTML = "B1";
 	} else if (correct <= 15) {
+		document.getElementById("level").innerHTML = "B1";
+	} else if (correct <= 20) {
 		document.getElementById("level").innerHTML = "B2";
-	} else if (correct <= 19) {
+	} else if (correct <= 23) {
 		document.getElementById("level").innerHTML = "C1";
 	} else {
 		document.getElementById("level").innerHTML = "C2";
