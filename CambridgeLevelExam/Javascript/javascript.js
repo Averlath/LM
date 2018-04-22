@@ -339,9 +339,9 @@ function checkTextfield(i) {
 
 	if (answer == userAnswer) {
 		correct++;
-	}
-	if (userAnswer == "") {
-		unanswered++;
+		document.getElementById("div" + x).style.color = "green";
+	} else {
+		document.getElementById("div" + x).style.color = "red";
 	}
 }
 
@@ -352,6 +352,9 @@ function checkRadio(i) {
 			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Option")[rb[j].getAttribute("value")].getAttribute("correct");
 			if (answer) {
 				correct++;
+				document.getElementById("div" + x).style.color = "green";
+			} else {
+				document.getElementById("div" + x).style.color = "red";
 			}
 		}
 	}
@@ -365,6 +368,9 @@ function checkDropDown(i) {
 
 			if (answer) {
 				correct++;
+				document.getElementById("div" + x).style.color = "green";
+			} else {
+				document.getElementById("div" + x).style.color = "red";
 			}
 		}
 	}
@@ -393,6 +399,9 @@ function checkCheckbox(i) {
 
 	if (selectedCorrect === totalCorrect && totalCorrect === totalSelected) {
 		correct++;
+		document.getElementById("div" + x).style.color = "green";
+	} else {
+		document.getElementById("div" + x).style.color = "red";
 	}
 }
 
@@ -404,6 +413,9 @@ function checkCascade(i) {
 
 			if (answer) {
 				correct++;
+				document.getElementById("div" + x).style.color = "green";
+			} else {
+				document.getElementById("div" + x).style.color = "red";
 			}
 		}
 	}
