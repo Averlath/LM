@@ -95,6 +95,10 @@ form {
     margin-left: 300px;
 }
 
+fieldset {
+    border: 0px solid;
+}
+
 #clock {
     width: 180px;
     float: left;

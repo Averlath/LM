@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!ELEMENT Questions (Question)+>
+  <!ELEMENT Question (Title,Type,Answer*)>
+  <!ELEMENT Title (#PCDATA)>
+  <!ELEMENT Type (#PCDATA)>
+  <!ELEMENT Answer (#PCDATA)>
+  <!ATTLIST Answer correct CDATA #IMPLIED>
+  <!ATTLIST Question id ID #REQUIRED>

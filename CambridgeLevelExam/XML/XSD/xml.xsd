@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Questions">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Question" maxOccurs="25">
+					<xs:attribute name="id" />
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Title">
+								<xs:simpleType>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Type">
+								<xs:simpleType>
+									<xs:enumeration value="Textfield" />
+									<xs:enumeration value="Radio" />
+									<xs:enumeration value="DropDown" />
+									<xs:enumeration value="Checkbox" />
+									<xs:enumeration value="Cascade" />
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Answer">
+								<xs:complexType>
+									<simpleContent>
+										<xs:attribute name="correct">
+											<xs:simpleType>
+											</xs:simpleType>
+										</xs:attribute>
+									</simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
