@@ -59,12 +59,11 @@ function startTimer() {
 		  	minute--;
 			second = 59;
 		}
-		if (minute == 0 && second == 0) {
-			//Correction.
+		if (minute == 0 && second == 1) {
 			EndExam();
 		}
 		second--;
-	}, 1);
+	}, 1000);
 }
 
 function EndExam() {
