@@ -101,7 +101,6 @@ function visualize(obj) {
 }
 
 function readOnly() {
-	alert('hi');
 	document.getElementById("fieldset").disabled = true;
 }
 
