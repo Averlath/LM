@@ -105,32 +105,32 @@ function readOnly() {
 }
 
 function Questions() {
-	for (var i=0; i<totalQuestions; i++) {
-		var type = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Type")[0].innerHTML;
-		switch (type) {
-			case "Textfield":
-				showTextfield(i);
-				break;
-			case "Radio":
-				showRadio(i);
-				break;
-			case "DropDown":
-				showDropDown(i);
-				break;
-			case "Checkbox":
-				showCheckbox(i);
-				break;
-			case "Cascade":
-				showCascade(i);
-				break;
-			default:
+    for (var i=0; i<totalQuestions; i++) {
+    var type = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Type")[0].innerHTML;
+        switch (type) {
+	    case "Textfield":
+		showTextfield(i);
+		break;
+	    case "Radio":
+		showRadio(i);
+		break;
+	    case "DropDown":
+		showDropDown(i);
+		break;
+	    case "Checkbox":
+		showCheckbox(i);
+		break;
+	    case "Cascade":
+		showCascade(i);
+		break;
+	    default:
                 console.log("default");
-		}
-	}
+        }
+    }
 }
 
 function showTextfield(i) {
-	var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("form");
 
     var div = document.createElement("div");
@@ -138,16 +138,16 @@ function showTextfield(i) {
     div.setAttribute("class", "question");
     form.appendChild(div);
 
-	var title = document.createElement('label');
+    var title = document.createElement('label');
     title.setAttribute('for', i);
     title.innerHTML = "<br />" + xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Title')[0].innerHTML + "<br /><br />";
-	div.appendChild(title);
+    div.appendChild(title);
 
-	for (var j=0; j<answers; j++) {
-		var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
+    for (var j=0; j<answers; j++) {
+	var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
 
-		var textfield = document.createElement("input");
-		textfield.setAttribute("type", "text");
+	var textfield = document.createElement("input");
+	textfield.setAttribute("type", "text");
         textfield.setAttribute("name", i);
         textfield.setAttribute('id', i + "text");
         div.appendChild(textfield);
@@ -156,32 +156,32 @@ function showTextfield(i) {
         label.setAttribute('for', i);
         label.innerHTML = "<br>";
         div.appendChild(label);
-	}
+    }
 
 	var line = document.createElement('label');
-    line.innerHTML = "<hr>";
+        line.innerHTML = "<hr>";
 	div.appendChild(line)
 }
 
 function showRadio(i) {
-	var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("form");
-
+	
     var div = document.createElement("div");
     div.setAttribute("id", "div" + i);
     div.setAttribute("class", "question");
     form.appendChild(div);
 
-	var title = document.createElement('label');
+    var title = document.createElement('label');
     title.setAttribute('for', i);
     title.innerHTML = "<br />" + xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Title')[0].innerHTML + "<br /><br />";
-	div.appendChild(title);
+    div.appendChild(title);
 
-	for (var j=0; j<answers; j++) {
-		var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
+    for (var j=0; j<answers; j++) {
+	var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
 
-		var rb = document.createElement("input");
-		rb.setAttribute("type", "radio");
+	var rb = document.createElement("input");
+	rb.setAttribute("type", "radio");
         rb.setAttribute("name", i);
         rb.setAttribute("value", j);
         rb.setAttribute('id', "radio");
@@ -191,15 +191,15 @@ function showRadio(i) {
         label.setAttribute('for', "radio");
         label.innerHTML = question + "<br>";
         div.appendChild(label);
-	}
+    }
 
-	var line = document.createElement('label');
+    var line = document.createElement('label');
     line.innerHTML = "<hr>";
-	div.appendChild(line);
+    div.appendChild(line);
 }
 
 function showDropDown(i) {
-	var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("form");
 
     var div = document.createElement("div");
@@ -207,20 +207,19 @@ function showDropDown(i) {
     div.setAttribute("class", "question");
     form.appendChild(div);
 
-	var title = document.createElement('label');
+    var title = document.createElement('label');
     title.setAttribute('for', i);
     title.innerHTML = "<br />" + xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Title')[0].innerHTML + "<br /><br />";
-	div.appendChild(title);
+    div.appendChild(title);
 
-	var select = document.createElement("select");
-	select.setAttribute("id", i + "select");
+    var select = document.createElement("select");
+    select.setAttribute("id", i + "select");
     select.setAttribute("name", i);
     div.appendChild(select);
 
-	for (var j=0; j<answers; j++) {
-		var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
-
-		var ms = document.createElement("option");
+    for (var j=0; j<answers; j++) {
+	var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
+	var ms = document.createElement("option");
         ms.setAttribute("name", i);
         ms.setAttribute("value", j);
         ms.setAttribute('id', j + "check");
@@ -229,18 +228,18 @@ function showDropDown(i) {
 
         var label = document.createElement('label');
         label.setAttribute('for', i);
-	}
+    }
 
-	label.innerHTML = "<br>";
+    label.innerHTML = "<br>";
     div.appendChild(label);
 
-	var line = document.createElement('label');
+    var line = document.createElement('label');
     line.innerHTML = "<hr>";
-	div.appendChild(line);
+    div.appendChild(line);
 }
 
 function showCheckbox(i) {
-	var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("form");
 
     var div = document.createElement("div");
@@ -248,16 +247,15 @@ function showCheckbox(i) {
     div.setAttribute("class", "question");
     form.appendChild(div);
 
-	var title = document.createElement('label');
+    var title = document.createElement('label');
     title.setAttribute('for', i);
     title.innerHTML = "<br />" + xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Title')[0].innerHTML + "<br /><br />";
-	div.appendChild(title);
+    div.appendChild(title);
 
-	for (var j=0; j<answers; j++) {
-		var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
-
-		var rb = document.createElement("input");
-		rb.setAttribute("type", "checkbox");
+    for (var j=0; j<answers; j++) {
+	var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
+	var rb = document.createElement("input");
+	rb.setAttribute("type", "checkbox");
         rb.setAttribute("name", i);
         rb.setAttribute("value", j);
         rb.setAttribute('id', "checkbox");
@@ -267,15 +265,15 @@ function showCheckbox(i) {
         label.setAttribute('for', "checkbox");
         label.innerHTML = question + "<br>";
         div.appendChild(label);
-	}
+    }
 
-	var line = document.createElement('label');
+    var line = document.createElement('label');
     line.innerHTML = "<hr>";
-	div.appendChild(line);
+    div.appendChild(line);
 }
 
 function showCascade(i) {
-	var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
+    var answers = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer").length;
     var form = document.getElementById("form");
 
     var div = document.createElement("div");
@@ -283,21 +281,20 @@ function showCascade(i) {
     div.setAttribute("class", "question");
     form.appendChild(div);
 
-	var title = document.createElement('label');
+    var title = document.createElement('label');
     title.setAttribute('for', i);
     title.innerHTML = "<br />" + xmlDoc.getElementsByTagName('Question')[i].getElementsByTagName('Title')[0].innerHTML + "<br /><br />";
-	div.appendChild(title);
+    div.appendChild(title);
 
-	var dropdown = document.createElement("select");
-	dropdown.setAttribute("id", i + "select");
+    var dropdown = document.createElement("select");
+    dropdown.setAttribute("id", i + "select");
     dropdown.setAttribute("name", i);
     dropdown.setAttribute("multiple", "");
     div.appendChild(dropdown);
 
-	for (var j=0; j<answers; j++) {
-		var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
-
-		var cascade = document.createElement("option");
+    for (var j=0; j<answers; j++) {
+	var question = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[j].innerHTML;
+	var cascade = document.createElement("option");
         cascade.setAttribute("name", i);
         cascade.setAttribute("value", j);
         cascade.setAttribute('id', j + "check");
@@ -306,37 +303,37 @@ function showCascade(i) {
 
         var label = document.createElement('label');
         label.setAttribute('for', i);
-	}
+    }
 
-	label.innerHTML = "<br>";
+    label.innerHTML = "<br>";
     div.appendChild(label);
 
-	var line = document.createElement('label');
+    var line = document.createElement('label');
     line.innerHTML = "<hr>";
-	div.appendChild(line);
+    div.appendChild(line);
 }
 
 function checkCall() {
-	for (var i=0; i<totalQuestions; i++) {
-		var type = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Type")[0].innerHTML;
-		switch (type) {
-			case "Textfield":
-				checkTextfield(i);
-				break;
-			case "Radio":
-				checkRadio(i);
-				break;
-			case "DropDown":
-				checkDropDown(i);
-				break;
-			case "Checkbox":
-				checkCheckbox(i);
-				break;
-			case "Cascade":
-				checkCascade(i);
-				break;
-		}
-	}
+    for (var i=0; i<totalQuestions; i++) {
+    var type = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Type")[0].innerHTML;
+        switch (type) {
+	    case "Textfield":
+		checkTextfield(i);
+		break;
+	    case "Radio":
+		checkRadio(i);
+		break;
+	    case "DropDown":
+		checkDropDown(i);
+		break;
+	    case "Checkbox":
+	    	checkCheckbox(i);
+		break;
+	    case "Cascade":
+		checkCascade(i);
+		break;
+        }
+    }
 }
 
 function checkTextfield(i) {
@@ -344,107 +341,107 @@ function checkTextfield(i) {
 	var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[0].innerHTML;
 
 	if (answer == userAnswer) {
-		correct++;
-		document.getElementById("div" + i).style.color = "green";
+	    correct++;
+	    document.getElementById("div" + i).style.color = "green";
 	} else {
-		document.getElementById("div" + i).style.color = "red";
+	    document.getElementById("div" + i).style.color = "red";
 	}
 }
 
 function checkRadio(i) {
-	var rb = document.getElementsByName(i);
-	for (var j=0; j<rb.length; j++) {
-		if (rb[j].checked) {
-			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[rb[j].getAttribute("value")].getAttribute("correct");
-			if (answer) {
-				correct++;
-				document.getElementById("div" + i).style.color = "green";
-			} else {
-				document.getElementById("div" + i).style.color = "red";
-			}
-		} else {
-			document.getElementById("div" + i).style.color = "red";
-		}
-	}
+    var rb = document.getElementsByName(i);
+    for (var j=0; j<rb.length; j++) {
+        if (rb[j].checked) {
+	    var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[rb[j].getAttribute("value")].getAttribute("correct");
+	    if (answer) {
+		correct++;
+		document.getElementById("div" + i).style.color = "green";
+	    } else {
+		document.getElementById("div" + i).style.color = "red";
+	    }
+        } else {
+	    document.getElementById("div" + i).style.color = "red";
+        }
+    }
 }
 
 function checkDropDown(i) {
-	var choice = document.getElementsByName(i);
-	for (var j=0; j<choice.length; j++) {
-		if (choice[j].selected) {
-			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
+    var choice = document.getElementsByName(i);
+    for (var j=0; j<choice.length; j++) {
+        if (choice[j].selected) {
+    	    var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
 
-			if (answer) {
-				correct++;
-				document.getElementById("div" + i).style.color = "green";
-			} else {
-				document.getElementById("div" + i).style.color = "red";
-			}
-		}
-	}
+	    if (answer) {
+		correct++;
+		document.getElementById("div" + i).style.color = "green";
+	    } else {
+		document.getElementById("div" + i).style.color = "red";
+	    }
+        }
+    }
 }
 
 function checkCheckbox(i) {
-	var checked = document.getElementsByName(i);
-	var totalCorrect = 0;
+    var checked = document.getElementsByName(i);
+    var totalCorrect = 0;
     var totalSelected = 0;
     var selectedCorrect = 0;
     for (var j=0; j<checked.length; j++) {
-		if (xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[checked[j].getAttribute("value")].getAttribute("correct")) {
-			totalCorrect++;
-		}
+        if (xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[checked[j].getAttribute("value")].getAttribute("correct")) {
+	    totalCorrect++;
+    	}
 
-		if (checked[j].checked) {
-			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[checked[j].getAttribute("value")].getAttribute("correct");
-			if (answer) {
-				totalSelected++;
-				selectedCorrect++;
-			} else {
-				totalSelected++;
-			}
-		}
-	}
+        if (checked[j].checked) {
+            var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[checked[j].getAttribute("value")].getAttribute("correct");
+            if (answer) {
+                totalSelected++;
+                selectedCorrect++;
+            } else {
+	        totalSelected++;
+            }
+        }
+    }
 
-	if (selectedCorrect === totalCorrect && totalCorrect === totalSelected) {
-		correct++;
-		document.getElementById("div" + i).style.color = "green";
-	} else {
-		document.getElementById("div" + i).style.color = "red";
-	}
+    if (selectedCorrect === totalCorrect && totalCorrect === totalSelected) {
+	correct++;
+	document.getElementById("div" + i).style.color = "green";
+    } else {
+	document.getElementById("div" + i).style.color = "red";
+    }
 }
 
 function checkCascade(i) {
-	var cascade = document.getElementsByName(i);
-	for (var j=0; j<cascade.length; j++) {
-		if (cascade[j].selected) {
-			var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
+    var cascade = document.getElementsByName(i);
+    for (var j=0; j<cascade.length; j++) {
+        if (cascade[j].selected) {
+	    var answer = xmlDoc.getElementsByTagName("Question")[i].getElementsByTagName("Answer")[document.getElementById(i + "select").value].getAttribute("correct");
 
-			if (answer) {
-				correct++;
-				document.getElementById("div" + i).style.color = "green";
-			} else {
-				document.getElementById("div" + i).style.color = "red";
-			}
-		} else {
-			document.getElementById("div" + i).style.color = "red";
-		}
-	}
+	    if (answer) {
+		correct++;
+		document.getElementById("div" + i).style.color = "green";
+	    } else {
+		document.getElementById("div" + i).style.color = "red";
+	    }
+        } else {
+	    document.getElementById("div" + i).style.color = "red";
+        }
+    }
 }
 
 function totalPoints() {
-	document.getElementById("correct").innerHTML = correct;
-	document.getElementById("incorrect").innerHTML = totalQuestions - correct;
-	if (correct <= 5) {
-		document.getElementById("level").innerHTML = "A1";
-	} else if (correct <= 10) {
-		document.getElementById("level").innerHTML = "A2";
-	} else if (correct <= 15) {
-		document.getElementById("level").innerHTML = "B1";
-	} else if (correct <= 20) {
-		document.getElementById("level").innerHTML = "B2";
-	} else if (correct <= 23) {
-		document.getElementById("level").innerHTML = "C1";
-	} else {
-		document.getElementById("level").innerHTML = "C2";
-	}
+    document.getElementById("correct").innerHTML = correct;
+    document.getElementById("incorrect").innerHTML = totalQuestions - correct;
+    if (correct <= 5) {
+	document.getElementById("level").innerHTML = "A1";
+    } else if (correct <= 10) {
+	document.getElementById("level").innerHTML = "A2";
+    } else if (correct <= 15) {
+	document.getElementById("level").innerHTML = "B1";
+    } else if (correct <= 20) {
+	document.getElementById("level").innerHTML = "B2";
+    } else if (correct <= 23) {
+	document.getElementById("level").innerHTML = "C1";
+    } else {
+	document.getElementById("level").innerHTML = "C2";
+    }
 }
