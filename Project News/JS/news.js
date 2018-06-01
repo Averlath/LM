@@ -4,6 +4,7 @@ var JSON2;
 //Funcion para que cuando bajamos hasta la parte más baja de la página, cargue el JSON
 window.onscroll = function() {
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+		alert('hi');
 		show(JSON1);
 	}
 };
@@ -26,6 +27,15 @@ window.onload = function() {
 		}
 	});
 }
+
+/*$(window).on("scroll", function() {
+	var scrollHeight = $(document).height();
+	var scrollPosition = $(window).height() + $(window).scrollTop();
+	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+  		alert('hi');
+    	show(JSON1);
+	}
+});*/
 
 function show(data) {
 	$(data).each(function(i, news) {
