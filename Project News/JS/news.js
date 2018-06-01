@@ -1,3 +1,4 @@
+//Variables Globales.
 var JSON1;
 var JSON2;
 
@@ -27,8 +28,9 @@ window.onload = function() {
 	});
 }
 
+//Funcion Show, es la que da formato al JSON en HTML.
 function show(data) {
-	$(data).each(function(i, news) {
-		$("#see").append("<h1 id='" + i + "'>" + news.Title + "</h1>");
+	$(data).each(function(i, json) {
+		$("#json").append("<h1 id='" + i + "'>" + json.Title + "</h1>");
 	}); 
 }
