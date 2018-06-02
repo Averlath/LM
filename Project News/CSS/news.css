@@ -3,6 +3,10 @@ nav {
 	height: 80px;
 }
 
+#nav-ad {
+	height: 50px;
+}
+
 li {
 	display: inline-block;
 }
@@ -11,12 +15,60 @@ li {
 	display: inline-block;
 }
 
+.datetime_published {
+	margin-left: 12px;
+}
+
+#datetime {
+	margin-top: 15;
+	padding: 30px;
+	text-align: center;
+}
+
+#date, #time, #datetime {
+	color: white;
+}
+
 /*Body*/
+body {
+	background: url('../images/yellow_background.png');
+}
+
+h2 {
+	width: 100%;
+    text-align:center;
+}
+
+#iframe-body, #nav-ad {
+	border: solid 2px;
+}
+
+#iframe-body p {
+	text-align: center;
+}
+
+#iframe-ferrari {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#iframe-button {
+	padding: 5px;
+	margin: auto;
+}
+
+#iframe-price {
+	font-weight: bold;
+	font-size: 22px;
+	color: red;
+}
+
 .html_news {
-	 border: 1px solid;
-	 padding: 15px;
-	 width: 720px;
-	 margin: 20px 0px 10px 0px;
+	border: 1px solid;
+	padding: 15px;
+	width: 720px;
+	margin: 20px 0px 10px 0px;
+	margin-left: -50px;
 }
 
 .title {
@@ -38,6 +90,9 @@ p {
 	margin-left: 10px;
 	border: 2px solid;
 	cursor: pointer;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 100px;
 }
 
 .read_more_button:hover {
@@ -54,24 +109,7 @@ p {
 
 /*Aside*/
 .aside {
-	border: 1px solid;
-	height: 250px;
 	margin-top: 50px;
 	position: fixed;
-	margin-left: 820px;
-	width: 500px;
-}
-
-.datetime_published {
-	margin-left: 12px;
-}
-
-#datetime {
-	margin-top: 10px;
-	padding: 30px;
-	text-align: center;
-}
-
-#date, #time, #datetime {
-	color: white;
+	margin-left: 750px;
 }

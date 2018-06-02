@@ -74,6 +74,7 @@ function createElementsJson1() {
     var div = document.createElement("div");
     div.setAttribute("id", "div-json1");
     div.setAttribute("class", "container");
+	section.setAttribute("style", "margin-left: -50px;");
     section.appendChild(div)
 
     var div2 = document.createElement("div");
@@ -94,6 +95,7 @@ function createElementsJson2() {
 	var section = document.getElementById("json_news2");
 
     var div = document.createElement("div");
+	section.setAttribute("style", "margin-left: -50px;");
     div.setAttribute("id", "div-json2");
     div.setAttribute("class", "container");
     section.appendChild(div);
@@ -115,11 +117,13 @@ function createElementsJson2() {
 //Div that displays a paragraph, saying No More news at this time
 function noMoreNews() {
 	var section = document.getElementById("json_news2");
+	section.setAttribute("style", "margin-left: -100px;");
 
 	var noNews = document.createElement("div");
 	noNews.setAttribute('id', 'no-more');
 	noNews.setAttribute('class', 'bg-secondary');
-	noNews.setAttribute('style', 'color: white; border: 1px solid; border-color: black; width: 722px; margin-left: 14px; font-size: 20px;');
+	noNews.setAttribute('style', 'color: white; border: 1px solid; border-color: black;' 
+						+ 'width: 722px; margin-left: 14px; font-size: 20px;');
 	section.appendChild(noNews);
 
 	var noMore = document.createElement("p");
@@ -132,16 +136,24 @@ function noMoreNews() {
 function show(data) {
 	$(data).each(function(i, json) {
 		if (data==JSON1) {
-			$("#div3-json1").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px 0px; border: 1px solid;' id='" + ("div" + 1+i + "'>"));
-			$("#div" + 1+i).append("<h1 class='text-info' style='font-size: 22px; text-align: center; padding: 5px; id='" + 1+i + "'>" + json.Title + "</h1>");
+			$("#div3-json1").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px;" +
+									"border: 1px solid;' id='" + ("div" + 1+i + "'>"));
+			$("#div" + 1+i).append("<h1 class='text-info' style='font-size: 22px; text-align: center; padding: 5px; id='" 
+									+ 1+i + "'>" + json.Title + "</h1>");
 			$("#div" + 1+i).append("<p style='margin-left: 2%'>" + json.Date + "</p>");
-			$("#div" + 1+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
+			$("#div" + 1+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid 
+									+ " align='left' style='width: 300px; height: 200px; padding: 10px;'" +
+									 "alt='json image' />" + json.News + "</p>");
 			newsAddedJson1++;
 		} else {
-			$("#div3-json2").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px 0px; border: 1px solid;' id='" + ("div" + 2+i + "'>"));
-			$("#div" + 2+i).append("<h1 class='text-info' style='font-size: 22px; text-align: center; padding: 5px; id='" + 2+i + "'>" + json.Title + "</h1>");
+			$("#div3-json2").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px; border: 1px solid;' id='" 
+									+ ("div" + 2+i + "'>"));
+			$("#div" + 2+i).append("<h1 class='text-info' style='font-size: 22px; text-align: center; padding: 5px; id='" 
+									+ 2+i + "'>" + json.Title + "</h1>");
 			$("#div" + 2+i).append("<p style='margin-left: 2%'>" + json.Date + "</p>");
-			$("#div" + 2+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
+			$("#div" + 2+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid 
+									+ " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" 
+									+ json.News + "</p>");
 			newsAddedJson2++;
 		}
 	});
@@ -187,7 +199,8 @@ function show_less3(obj) {
 //Load DateTime function
 function loadDateTime() {
     var now = new Date(); //get the datetime
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 
+    				'September', 'October', 'November', 'December'];
 
 	if (now.getHours() >= 12) {
 		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
