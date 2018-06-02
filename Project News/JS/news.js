@@ -16,8 +16,8 @@ window.onload = function() {
 	document.getElementById("show_less").style.display = "none";
 	document.getElementById("show_less2").style.display = "none";
 	document.getElementById("show_less3").style.display = "none";
-	//document.getElementById("date").innerHTML = new Date().toLocaleString();
-	document.getElementById("time").innerHTML = dateObj.getTime();
+	document.getElementById("date").innerHTML = new Date().toLocaleString();
+	//document.getElementById("time").innerHTML = dateObj.getTime();
 
 	//Ajax function to read JSON1.
 	$.ajax ({
