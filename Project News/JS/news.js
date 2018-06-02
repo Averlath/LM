@@ -118,10 +118,12 @@ function noMoreNews() {
 
 	var noNews = document.createElement("div");
 	noNews.setAttribute('id', 'no-more');
-	noNews.setAttribute('class', 'bg-success');
+	noNews.setAttribute('class', 'bg-secondary');
+	noNews.setAttribute('style', 'color: white; border: 1px solid; border-color: black; width: 722px; margin-left: 14px; font-size: 20px;');
 	section.appendChild(noNews);
 
 	var noMore = document.createElement("p");
+	noMore.setAttribute('style', 'text-align: center; margin-top: 8px;');
 	noMore.innerHTML = "There are no more news at this time.";
 	noNews.appendChild(noMore);
 }
@@ -213,7 +215,7 @@ function loadDateTime() {
 	    }
 	}
 
-    var date = [months[now.getMonth()], now.getDate() + ', ' + now.getFullYear()].join(' ');
+    var date = [months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear()];
 
     document.getElementById('time').innerHTML = time;
     document.getElementById('date').innerHTML = date;
