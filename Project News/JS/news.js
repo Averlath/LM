@@ -9,6 +9,7 @@ var newsAddedJson2=0;
 var newsTotalJson2=0;
 
 window.onload = function() {
+	loadDateTime();
 	//Hidden text
 	document.getElementById("long").style.display = "none";
 	document.getElementById("long2").style.display = "none";
@@ -180,3 +181,19 @@ function show_less3(obj) {
 	document.getElementById("read_more3").style.display = "block";
 	document.getElementById("show_less3").style.display = "none";
 }
+
+function loadDateTime() {
+    var now = new Date(); //get the datetime
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+
+    console.log(now);
+    console.log(now.getHours());
+    console.log(now.getMinutes());
+    console.log(now.getSeconds());
+    console.log(time);
+    console.log(months);
+    document.getElementById('time').innerHTML = time;
+}
+
+//loadDateTime();
