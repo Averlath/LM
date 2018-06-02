@@ -9,7 +9,9 @@ var newsAddedJson2=0;
 var newsTotalJson2=0;
 
 window.onload = function() {
+	//Calling DateTime function
 	loadDateTime();
+
 	//Hidden text
 	document.getElementById("long").style.display = "none";
 	document.getElementById("long2").style.display = "none";
@@ -17,8 +19,6 @@ window.onload = function() {
 	document.getElementById("show_less").style.display = "none";
 	document.getElementById("show_less2").style.display = "none";
 	document.getElementById("show_less3").style.display = "none";
-	//document.getElementById("date").innerHTML = new Date().toLocaleString();
-	//document.getElementById("time").innerHTML = dateObj.getTime();
 
 	//Ajax function to read JSON1.
 	$.ajax ({
@@ -182,15 +182,42 @@ function show_less3(obj) {
 	document.getElementById("show_less3").style.display = "none";
 }
 
+//Load DateTime function
 function loadDateTime() {
     var now = new Date(); //get the datetime
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+
+	if (now.getHours() >= 12) {
+		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
+			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
+				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
+			} else if (now.getSeconds() < 10) {
+				var time = (now.getHours()-12) + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
+			} else if (now.getMinutes() < 10) {
+				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
+			}
+		} else {
+	    	var time = (now.getHours()-12) + ':' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
+	    }
+	} else {
+		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
+			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
+				var time = now.getHours() + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
+			} else if (now.getSeconds() < 10) {
+				var time = now.getHours() + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
+			} else if (now.getMinutes() < 10) {
+				var time = now.getHours() + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' AM';
+			}
+		} else {
+	    	var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds()  + ' AM';
+	    }
+	}
 
     var date = [months[now.getMonth()], now.getDate() + ', ' + now.getFullYear()].join(' ');
 
     document.getElementById('time').innerHTML = time;
     document.getElementById('date').innerHTML = date;
-}
 
-//loadDateTime();
+    //Call again in 1000 miliseconds
+    setTimeout(loadDateTime, 1000);
+}

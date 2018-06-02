@@ -1,4 +1,8 @@
 /*Nav*/
+nav {
+	height: 80px;
+}
+
 li {
 	display: inline-block;
 }
@@ -51,12 +55,23 @@ p {
 /*Aside*/
 .aside {
 	border: 1px solid;
-	height: 400px;
+	height: 250px;
 	margin-top: 50px;
 	position: fixed;
-	margin-left: 850px;
+	margin-left: 820px;
+	width: 500px;
 }
 
 .datetime_published {
 	margin-left: 12px;
+}
+
+#datetime {
+	margin-top: 10px;
+	padding: 30px;
+	text-align: center;
+}
+
+#date, #time, #datetime {
+	color: white;
 }
