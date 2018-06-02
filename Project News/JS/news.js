@@ -45,8 +45,6 @@ window.onload = function() {
 //Funcion para que cuando bajamos hasta la parte más baja de la página, cargue el JSON
 window.onscroll = function() {
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-		console.log("1. Added: " + newsAddedJson1 + ", Total: " + newsTotalJson1);
-		console.log("2. Added: " + newsAddedJson2 + ", Total: " + newsTotalJson2);
 		if (newsTotalJson1 > newsAddedJson1) {
 			createElementsJson1();
 		} else {
@@ -63,7 +61,7 @@ function createElementsJson1() {
 
     var div = document.createElement("div");
     div.setAttribute("id", "div-json1");
-    div.setAttribute("class", "container json");
+    div.setAttribute("class", "container json bg-primary");
     form.appendChild(div)
 
     show(JSON1);
@@ -75,7 +73,7 @@ function createElementsJson2() {
 
     var div = document.createElement("div");
     div.setAttribute("id", "div-json2");
-    div.setAttribute("class", "container json");
+    div.setAttribute("class", "container json bg-success");
     form.appendChild(div)
 
     show(JSON2);
@@ -85,10 +83,14 @@ function createElementsJson2() {
 function show(data) {
 	$(data).each(function(i, json) {
 		if (data==JSON1) {
-			$("#div-json1").append("<h1 id='" + 1+i + "'>" + json.Title + "</h1>");
+			$("#div-json1").append("<div id='" + ("div" + 1+i + "'>"));
+			$("#div" + 1+i).append("<h1 class='text-danger' id='" + 1+i + "'>" + json.Title + "</h1>");
+			$("#div" + 2+i).append("<p class='text-danger'>" + json.News + "</p>");
 			newsAddedJson1++;
 		} else {
-			$("#div-json2").append("<h1 id='" + 2+i + "'>" + json.Title + "</h1>");
+			$("#div-json2").append("<div id='" + ("div" + 2+i) + "'>");
+			$("#div" + 2+i).append("<h1 id='" + 2+i + "'>" + json.Title + "</h1>");
+			$("#div" + 2+i).append("<p class='text-danger'>" + json.News + "</p>");
 			newsAddedJson2++;
 		}
 	}); 
