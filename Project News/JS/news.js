@@ -57,7 +57,7 @@ window.onscroll = function() {
 
 //Create div for JSON1
 function createElementsJson1() {
-	var form = document.getElementById("json");
+	var form = document.getElementById("json_news1");
 
     var div = document.createElement("div");
     div.setAttribute("id", "div-json1");
@@ -69,14 +69,28 @@ function createElementsJson1() {
 
 //Create div for JSON2
 function createElementsJson2() {
-	var form = document.getElementById("json");
+	var section = document.getElementById("json_news2");
 
     var div = document.createElement("div");
     div.setAttribute("id", "div-json2");
     div.setAttribute("class", "container json bg-success");
-    form.appendChild(div)
+    section.appendChild(div);
 
     show(JSON2);
+    noMoreNews();
+}
+
+function noMoreNews() {
+	var section = document.getElementById("json_news2");
+
+	var noNews = document.createElement("div");
+	noNews.setAttribute('id', 'no-more');
+	noNews.setAttribute('class', 'bg-success');
+	section.appendChild(noNews);
+
+	var noMore = document.createElement("p");
+	noMore.innerHTML = "There are no more news at this time.";
+	noNews.appendChild(noMore);
 }
 
 //Funcion Show, es la que da formato al JSON en HTML.
@@ -85,7 +99,8 @@ function show(data) {
 		if (data==JSON1) {
 			$("#div-json1").append("<div id='" + ("div" + 1+i + "'>"));
 			$("#div" + 1+i).append("<h1 class='text-danger' id='" + 1+i + "'>" + json.Title + "</h1>");
-			$("#div" + 2+i).append("<p class='text-danger'>" + json.News + "</p>");
+			$("#div" + 1+i).append("<p>" + json.Date + "</p>");
+			$("#div" + 1+i).append("<p class='text-success'> onclick='changeNews(this)'" + json.Short_news + "</p>");
 			newsAddedJson1++;
 		} else {
 			$("#div-json2").append("<div id='" + ("div" + 2+i) + "'>");
@@ -93,5 +108,5 @@ function show(data) {
 			$("#div" + 2+i).append("<p class='text-danger'>" + json.News + "</p>");
 			newsAddedJson2++;
 		}
-	}); 
+	});
 }
