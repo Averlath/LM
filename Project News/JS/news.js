@@ -120,13 +120,13 @@ function show(data) {
 			$("#div3-json1").append("<div class='bg-secondary' style='width: 720px; padding: 15px; margin-top: 20px;' id='" + ("div" + 1+i + "'>"));
 			$("#div" + 1+i).append("<h1 class='text-info' style='font-size: 32px; text-align: justify' id='" + 1+i + "'>" + json.Title + "</h1>");
 			$("#div" + 1+i).append("<p>" + json.Date + "</p>");
-			$("#div" + 1+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageBig + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
+			$("#div" + 1+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
 			newsAddedJson1++;
 		} else {
 			$("#div3-json2").append("<div class='bg-gradient-secondary' style='width: 720px; padding: 15px; margin-top: 20px;' id='" + ("div" + 2+i + "'>"));
 			$("#div" + 2+i).append("<h1 class='text-info' style='font-size: 32px; text-align: justify' id='" + 2+i + "'>" + json.Title + "</h1>");
 			$("#div" + 2+i).append("<p>" + json.Date + "</p>");
-			$("#div" + 2+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageBig + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
+			$("#div" + 2+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
 			newsAddedJson2++;
 		}
 	});
