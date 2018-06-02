@@ -3,10 +3,12 @@ var JSON1;
 var JSON2;
 
 //otras variables
-var newsAdded=0;
-var newsTotal=0;
+var newsAddedJson1=0;
+var newsTotalJson1=0;
+var newsAddedJson2=0;
+var newsTotalJson2=0;
 
-//Funcion AJAX para leer el JSON.
+//Funcion AJAX para leer los JSON.
 window.onload = function() {
 	$.ajax ({
 		url: 'https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/data/1.json',
@@ -14,7 +16,7 @@ window.onload = function() {
 		type: 'get',
 		success: function(data) {
 			$(data.news).each(function(index, value) {
-				newsTotal++;
+				newsTotalJson1++;
 				JSON1 = data["news"];
 			});
 		},
@@ -22,22 +24,41 @@ window.onload = function() {
 			console.log("Error reading JSON1");
 		}
 	});
+
+	$.ajax ({
+		url: "https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/data/2.json",
+		dataType: 'json',
+		type: 'get',
+		success: function(data2) {
+			$(data2.news).each(function(index2, value2) {
+				newsTotalJson2++;
+				JSON2 = data2["news"];
+			});
+		}
+		//Error en cargar - Uncaught SyntaxError: Unexpected identifier
+		/*error: function() {
+			console.log("Error reading JSON2");
+		}*/
+	});
 }
 
 //Funcion para que cuando bajamos hasta la parte más baja de la página, cargue el JSON
 window.onscroll = function() {
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-		console.log("Added: " + newsAdded + ", Total: " + newsTotal);
-		if (newsTotal > newsAdded) {
-			createElements();
+		console.log("1. Added: " + newsAddedJson1 + ", Total: " + newsTotalJson1);
+		console.log("2. Added: " + newsAddedJson2 + ", Total: " + newsTotalJson2);
+		if (newsTotalJson1 > newsAddedJson1) {
+			createElementsJson1();
 		} else {
-			console.log('All news added');
+			if (newsTotalJson2 > newsAddedJson2) {
+				createElementsJson2();
+			}
 		}
 	}
 };
 
-//Create div
-function createElements() {
+//Create div for JSON1
+function createElementsJson1() {
 	var form = document.getElementById("json");
 
     var div = document.createElement("div");
@@ -48,10 +69,27 @@ function createElements() {
     show(JSON1);
 }
 
+//Create div for JSON2
+function createElementsJson2() {
+	var form = document.getElementById("json");
+
+    var div = document.createElement("div");
+    div.setAttribute("id", "div-json2");
+    div.setAttribute("class", "container json");
+    form.appendChild(div)
+
+    show(JSON2);
+}
+
 //Funcion Show, es la que da formato al JSON en HTML.
 function show(data) {
 	$(data).each(function(i, json) {
-		newsAdded++;
-		$("#div-json1").append("<h1 id='" + i + "'>" + json.Title + "</h1>");
+		if (data==JSON1) {
+			$("#div-json1").append("<h1 id='" + 1+i + "'>" + json.Title + "</h1>");
+			newsAddedJson1++;
+		} else {
+			$("#div-json2").append("<h1 id='" + 2+i + "'>" + json.Title + "</h1>");
+			newsAddedJson2++;
+		}
 	}); 
 }
