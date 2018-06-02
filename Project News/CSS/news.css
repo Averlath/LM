@@ -27,10 +27,25 @@ p {
 
 .image {
 	padding: 10px;
+	margin-bottom: 2px;
 }
 
 .read_more_button {
 	margin-left: 10px;
+	border: 2px solid;
+	cursor: pointer;
+}
+
+.read_more_button:hover {
+	background-color: grey;
+	color: white;
+	border-color: black;
+}
+
+.read_more_button:focus {
+	background-color: darkgrey;
+	color: black;
+	border-color: black;
 }
 
 /*Aside*/
@@ -40,4 +55,8 @@ p {
 	margin-top: 50px;
 	position: fixed;
 	margin-left: 850px;
+}
+
+.datetime_published {
+	margin-left: 12px;
 }
