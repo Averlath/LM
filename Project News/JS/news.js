@@ -71,7 +71,7 @@ function createElementsJson1() {
 
     var div3 = document.createElement("div");
     div3.setAttribute("id", "div3-json1");
-    div3.setAttribute("class", "col-8");
+    div3.setAttribute("class", "col-12");
     div2.appendChild(div3);
 
     show(JSON1);
@@ -93,7 +93,7 @@ function createElementsJson2() {
 
     var div3 = document.createElement("div");
     div3.setAttribute("id", "div3-json2");
-    div3.setAttribute("class", "col-8");
+    div3.setAttribute("class", "col-12");
     div2.appendChild(div3);
 
     show(JSON2);
@@ -117,13 +117,13 @@ function noMoreNews() {
 function show(data) {
 	$(data).each(function(i, json) {
 		if (data==JSON1) {
-			$("#div3-json1").append("<div class='bg-secondary' style='width: 720px; padding: 15px; margin-top: 20px;' id='" + ("div" + 1+i + "'>"));
+			$("#div3-json1").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px 0px; border: 1px solid;' id='" + ("div" + 1+i + "'>"));
 			$("#div" + 1+i).append("<h1 class='text-info' style='font-size: 32px; text-align: justify' id='" + 1+i + "'>" + json.Title + "</h1>");
 			$("#div" + 1+i).append("<p>" + json.Date + "</p>");
 			$("#div" + 1+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
 			newsAddedJson1++;
 		} else {
-			$("#div3-json2").append("<div class='bg-gradient-secondary' style='width: 720px; padding: 15px; margin-top: 20px;' id='" + ("div" + 2+i + "'>"));
+			$("#div3-json2").append("<div style='width: 720px; padding: 15px; margin: 20px 0px 10px 0px; border: 1px solid;' id='" + ("div" + 2+i + "'>"));
 			$("#div" + 2+i).append("<h1 class='text-info' style='font-size: 32px; text-align: justify' id='" + 2+i + "'>" + json.Title + "</h1>");
 			$("#div" + 2+i).append("<p>" + json.Date + "</p>");
 			$("#div" + 2+i).append("<p class='text-dark' style='text-align: justify;'><img src=" + json.ImageMid + " align='left' style='width: 300px; height: 200px; padding: 10px;' alt='json image' />" + json.News + "</p>");
