@@ -17,7 +17,7 @@ window.onload = function() {
 	document.getElementById("show_less").style.display = "none";
 	document.getElementById("show_less2").style.display = "none";
 	document.getElementById("show_less3").style.display = "none";
-	document.getElementById("date").innerHTML = new Date().toLocaleString();
+	//document.getElementById("date").innerHTML = new Date().toLocaleString();
 	//document.getElementById("time").innerHTML = dateObj.getTime();
 
 	//Ajax function to read JSON1.
@@ -187,13 +187,10 @@ function loadDateTime() {
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
 
-    console.log(now);
-    console.log(now.getHours());
-    console.log(now.getMinutes());
-    console.log(now.getSeconds());
-    console.log(time);
-    console.log(months);
+    var date = [months[now.getMonth()], now.getDate() + ', ' + now.getFullYear()].join(' ');
+
     document.getElementById('time').innerHTML = time;
+    document.getElementById('date').innerHTML = date;
 }
 
 //loadDateTime();
