@@ -117,7 +117,7 @@ function createElementsJson2() {
 //Div that displays a paragraph, saying No More news at this time
 function noMoreNews() {
 	var section = document.getElementById("json_news2");
-	section.setAttribute("style", "margin-left: -100px;");
+	section.setAttribute("style", "margin-left: -50px;");
 
 	var noNews = document.createElement("div");
 	noNews.setAttribute('id', 'no-more');
