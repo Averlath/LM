@@ -1,0 +1,43 @@
+/*Nav*/
+li {
+	display: inline-block;
+}
+
+.nav {
+	display: inline-block;
+}
+
+/*Body*/
+.html_news {
+	 border: 1px solid;
+	 padding: 15px;
+	 width: 720px;
+	 margin: 20px 0px 10px 0px;
+}
+
+.title {
+	font-size: 22px;
+	text-align: center;
+	padding: 5px;
+}
+
+p {
+	text-align: justify;
+}
+
+.image {
+	padding: 10px;
+}
+
+.read_more_button {
+	margin-left: 10px;
+}
+
+/*Aside*/
+.aside {
+	border: 1px solid;
+	height: 400px;
+	margin-top: 50px;
+	position: fixed;
+	margin-left: 850px;
+}
