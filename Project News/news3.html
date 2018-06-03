@@ -2,21 +2,57 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>News</title>
+    <title>Neutron Star</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
     <link rel="stylesheet" href="CSS/news.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/news.js"></script>
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-static-top bg-dark">
-			<div id="nav">
-				<h1 class="text-light">News about the World</h1>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar navbar-static-top bg-dark">
+				<div id="nav">
+					<h1 class="text-light">News about the World</h1>
+				</div>
+				<div id="datetime">
+					<h3>Date and Time</h3>
+				<p><span id="date"></span> - <span id="time"></span></p>
 			</div>
-			<div id="datetime">
-				<h3>Date and Time</h2>
-			<p><span id="date"></span> - <span id="time"></p>
-		</div>
-		</nav>
-	</header>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="news_title">Colliding neutron stars likely formed low-mass black hole</h1>
+						<img class="news_image" src="images/blackhole.jpg" height="400" width="600" />
+						<p id="margin-bottom">Date published: May 29, 2018 - 11:43 AM</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						<img src="images/star.jpg" height="300" width="180" id="image" />
+					</div>
+					<div class="col-9 news_div">
+						<p>Gravitational waves and high-energy gamma rays from the merger of two neutron stars swept through Earth’s solar system, detected by the LIGO and NASA’s Fermi Gamma-ray Space Telescope. What happened next was not immediately clear. Did the two compact bodies merge to become a single, more massive neutron star? Or did the merger produce a black hole? Astronomers using NASA’s Chandra X-ray Observatory to study the aftermath said it appears the merger resulted in the lowest mass black hole ever discovered.</p>
+						<p>“We may have answered one of the most basic questions about this dazzling event – what did it make?” said Pawan Kumar of the University of Texas at Austin, co-author of a paper describing the observations. “Astronomers have long suspected that neutron star mergers would form a black hole and produce bursts of radiation, but we lacked a strong case for it until now.”</p>
+						<p>The gravitational waves detected by LIGO indicated the mass of the post-merger body, known as GW170817, was about 2.7 solar masses, making it either the most massive neutron star ever found or the lowest-mass black hole. The least-massive black holes found previously weighed in at four to five times the sun’s mass.</p>
+						<p>If the merger detected by LIGO and Fermi resulted in a more massive neutron star, the signal should indicate a very rapid rotation and a strong magnetic field, resulting in an expanding cloud of high-energy debris and X-ray emissions. But that is not what Chandra detected. The data showed X-ray levels up to several hundred times lower than expected.</p>
+					</div>
+					<div class="col-1">
+					</div>
+					<h3 class="video_title">Quick video about Neutron Stars:</h3>
+					<iframe class="news_video" width="420" height="315" src="https://www.youtube.com/embed/RrMvUL8HFlM" allowfullscreen></iframe>
+				</div>
+			</div>
+		</main>
+		<footer id="news_footer" class="bg-dark">
+			<a href="news.html"><input type="button" class="read_more_button btn-muted" value="Go Back" /></a>
+			<h3 class="text-light">Page created by Ivan Penev. All rights reserved.®</h3>
+		</footer>
+	</div>
+</body>
+</html>

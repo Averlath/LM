@@ -32,6 +32,10 @@ nav {
 	margin-left: 350px;
 }
 
+.news_video2 {
+	margin-left: 480px;
+}
+
 .video_title {
 	margin: auto;
 	padding-bottom: 20px;
@@ -169,17 +173,24 @@ p {
 }
 
 /*Footer*/
-
 footer {
+	width: 100%;
 	margin-top: 30px;
 	height: 60px;
+	display: inline-block;
 }
 
 .footer-center {
-	width: 100%;
+	display: inline-block;
 }
 
 footer h3 {
 	padding-top: 14px;
 	margin-left: 280px;
+}
+
+#news_footer h3 {
+	padding-top: 14px;
+	margin-left: 230px;
+	display: inline-block;
 }
