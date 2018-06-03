@@ -228,6 +228,10 @@ function loadDateTime() {
 	    }
 	}
 
+	if (now.getHours() == 0) {
+    	var time = now.getHours()
+  	}
+
     var date = [months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear()];
 
     document.getElementById('time').innerHTML = time;

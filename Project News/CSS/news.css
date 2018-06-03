@@ -7,6 +7,15 @@ nav {
 	height: 50px;
 }
 
+#wrapper {
+	width: 100%;
+}
+
+.news_image {
+	width: 800px;
+	margin: auto;
+}
+
 li {
 	display: inline-block;
 }
