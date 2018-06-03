@@ -12,8 +12,42 @@ nav {
 }
 
 .news_image {
-	width: 800px;
+	margin-left: 250px;
+}
+
+#margin-bottom {
+	margin-bottom: 100px;
+	margin-left: 250px;
+	margin-top: 10px;
+}
+
+.news_title {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.news_video {
+	margin-left: 350px;
+}
+
+.video_title {
 	margin: auto;
+	padding-bottom: 20px;
+}
+
+.news_div {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+#image, #image2 {
+	margin-top: 25px;
+}
+
+#image2 {
+	margin-left: -20px;
 }
 
 li {
