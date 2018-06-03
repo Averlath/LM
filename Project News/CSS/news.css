@@ -135,7 +135,6 @@ p {
 }
 
 .read_more_button {
-	margin-left: 10px;
 	border: 2px solid;
 	cursor: pointer;
 	margin-left: 10px;
@@ -143,13 +142,20 @@ p {
 	width: 100px;
 }
 
-.read_more_button:hover {
+.load_more_button {
+	border: 2px solid;
+	cursor: pointer;
+	margin-left: 5px;
+	width: 150px;
+}
+
+.read_more_button:hover, .load_more_button:hover {
 	background-color: grey;
 	color: white;
 	border-color: black;
 }
 
-.read_more_button:focus {
+.read_more_button:focus, .load_more_button:focus {
 	background-color: darkgrey;
 	color: black;
 	border-color: black;
@@ -160,4 +166,20 @@ p {
 	margin-top: 50px;
 	position: fixed;
 	margin-left: 750px;
+}
+
+/*Footer*/
+
+footer {
+	margin-top: 30px;
+	height: 60px;
+}
+
+.footer-center {
+	width: 100%;
+}
+
+footer h3 {
+	padding-top: 14px;
+	margin-left: 280px;
 }

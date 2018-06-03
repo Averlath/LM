@@ -19,6 +19,8 @@ window.onload = function() {
 	document.getElementById("show_less").style.display = "none";
 	document.getElementById("show_less2").style.display = "none";
 	document.getElementById("show_less3").style.display = "none";
+	document.getElementById("footer").style.display = "none";
+	document.getElementById("load_more2").style.display = "none";
 
 	//Ajax function to read JSON1.
 	$.ajax ({
@@ -87,7 +89,9 @@ function createElementsJson1() {
     div3.setAttribute("class", "col-12");
     div2.appendChild(div3);
 
+    document.getElementById("load_more").style.display = "none";
     show(JSON1);
+    document.getElementById("load_more2").style.display = "block";
 }
 
 //Create div for JSON2
@@ -110,8 +114,10 @@ function createElementsJson2() {
     div3.setAttribute("class", "col-12");
     div2.appendChild(div3);
 
+    document.getElementById("load_more2").style.display = "none";
     show(JSON2);
     noMoreNews();
+    footer();
 }
 
 //Div that displays a paragraph, saying No More news at this time
@@ -239,4 +245,19 @@ function loadDateTime() {
 
     //Call again in 1000 miliseconds
     setTimeout(loadDateTime, 1000);
+}
+
+function footer() {
+	document.getElementById("footer").style.display = "block";
+}
+
+function load(obj) {
+	if (newsAddedJson1 >= 3) {
+		if (newsAddedJson2 >= 3) {
+		} else {
+			createElementsJson2();
+		}
+	} else {
+		createElementsJson1();
+	}
 }
