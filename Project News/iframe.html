@@ -1,8 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--OpenGraph properties-->
+	<meta property="og:title" content="News about the World" />
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="Page that has news about many subjects" />
+	<meta property="og:image" content="http://familytherapytrainingnetwork.org/aft-summer-2016-news-letter/" />
+	<meta property="og:url" content="https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news.html" />
+	<meta property="og:site_name" content="News about the World" />
+
+    <meta charset="UTF-8" />
     <title>iFrame</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
     <link rel="stylesheet" href="CSS/news.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,8 +25,8 @@
 	</div>
 	<div id="iframe-body">
 		<p>
-			<img src="images/ad.jpg" width="215" height="160" align="left" />Buy now a <br /> <span id="iframe-ferrari">Ferrari 812 Superfast </span><br /> for only <br /><span id="iframe-price">£262,962.99</span><br />
-			<a href="https://www.hrowen.co.uk/ferrari/812-superfast/" target="_blank"><input type="button" id="iframe-button" class="read_more_button btn-muted" value="BUY NOW"></a>
+			<img src="images/ad.jpg" width="215" height="160" id="iframe_align" alt="ferrari" />Buy now a <br /> <span id="iframe-ferrari">Ferrari 812 Superfast </span><br /> for only <br /><span id="iframe-price">£262,962.99</span><br />
+			<input type="button" id="iframe-button" class="read_more_button btn-muted" onclick="window.open('https://www.hrowen.co.uk/ferrari/812-superfast/';)" value="BUY NOW" />
 		</p>
 	</div>
 </body>

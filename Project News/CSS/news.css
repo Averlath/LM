@@ -50,6 +50,10 @@ p {
 	margin-bottom: 2px;
 }
 
+.align_left {
+	float: left;
+}
+
 .read_more_button {
 	border: 2px solid;
 	cursor: pointer;
@@ -146,6 +150,10 @@ h2 {
 
 #iframe-body, #nav-ad {
 	border: solid 2px;
+}
+
+#iframe_align {
+	float: left;
 }
 
 #iframe-ferrari {
