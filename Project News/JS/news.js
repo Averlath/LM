@@ -12,7 +12,7 @@ window.onload = function() {
 	//Calling DateTime function
 	loadDateTime();
 
-	//Hidden text
+	//Hidden elements
 	document.getElementById("long").style.display = "none";
 	document.getElementById("long2").style.display = "none";
 	document.getElementById("long3").style.display = "none";
@@ -22,7 +22,7 @@ window.onload = function() {
 	document.getElementById("footer").style.display = "none";
 	document.getElementById("load_more2").style.display = "none";
 
-	//Ajax function to read JSON1.
+	//Ajax function to read JSON1
 	$.ajax ({
 		url: 'https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/data/1.json',
 		dataType: 'json',
@@ -38,7 +38,7 @@ window.onload = function() {
 		}
 	});
 
-	//Ajax function to read JSON2.
+	//Ajax function to read JSON2
 	$.ajax ({
 		url: "https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/data/2.json",
 		dataType: 'json',
@@ -56,7 +56,7 @@ window.onload = function() {
 	});
 }
 
-//Function that loads next JSON whenever scrolling to Bottom of page
+//Function that loads (next) JSON whenever scrolling to Bottom of page
 window.onscroll = function() {
 	if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
 		if (newsTotalJson1 > newsAddedJson1) {
@@ -68,6 +68,51 @@ window.onscroll = function() {
 		}
 	}
 };
+
+//Load DateTime function
+function loadDateTime() {
+    var now = new Date(); //Get the datetime
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 
+    				'September', 'October', 'November', 'December'];
+
+	if (now.getHours() >= 12) {
+		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
+			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
+				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
+			} else if (now.getSeconds() < 10) {
+				var time = (now.getHours()-12) + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
+			} else if (now.getMinutes() < 10) {
+				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
+			}
+		} else {
+	    	var time = (now.getHours()-12) + ':' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
+	    }
+	} else {
+		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
+			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
+				var time = now.getHours() + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
+			} else if (now.getSeconds() < 10) {
+				var time = now.getHours() + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
+			} else if (now.getMinutes() < 10) {
+				var time = now.getHours() + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' AM';
+			}
+		} else {
+	    	var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds()  + ' AM';
+	    }
+	}
+
+	if (now.getHours() == 0) {
+    	var time = now.getHours()
+  	}
+
+    var date = [months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear()];
+
+    document.getElementById('time').innerHTML = time;
+    document.getElementById('date').innerHTML = date;
+
+    //Call again in 1000 miliseconds
+    setTimeout(loadDateTime, 1000);
+}
 
 //Create div for JSON1
 function createElementsJson1() {
@@ -89,8 +134,9 @@ function createElementsJson1() {
     div3.setAttribute("class", "col-12");
     div2.appendChild(div3);
 
+
     document.getElementById("load_more").style.display = "none";
-    show(JSON1);
+    show(JSON1); //Loads JSON1
     document.getElementById("load_more2").style.display = "block";
 }
 
@@ -115,9 +161,9 @@ function createElementsJson2() {
     div2.appendChild(div3);
 
     document.getElementById("load_more2").style.display = "none";
-    show(JSON2);
-    noMoreNews();
-    footer();
+    show(JSON2); //Loads JSON2
+    noMoreNews(); //Loads DIV element that says that there are no more news
+    footer(); //Loads the site's footer
 }
 
 //Div that displays a paragraph, saying No More news at this time
@@ -165,7 +211,19 @@ function show(data) {
 	});
 }
 
-//On click, show the remaining text of news 1, 2 and 3
+//Function that OnClick Load More News button calls the functions that load JSON
+function load(obj) {
+	if (newsAddedJson1 >= 3) {
+		if (newsAddedJson2 >= 3) {
+		} else {
+			createElementsJson2();
+		}
+	} else {
+		createElementsJson1();
+	}
+}
+
+//On click, show the additional text of news 1, 2 and 3
 function show_news(obj) {
 	document.getElementById("long").style.display = "block";
 	document.getElementById("read_more").style.display = "none";
@@ -202,62 +260,7 @@ function show_less3(obj) {
 	document.getElementById("show_less3").style.display = "none";
 }
 
-//Load DateTime function
-function loadDateTime() {
-    var now = new Date(); //get the datetime
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 
-    				'September', 'October', 'November', 'December'];
-
-	if (now.getHours() >= 12) {
-		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
-			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
-				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
-			} else if (now.getSeconds() < 10) {
-				var time = (now.getHours()-12) + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' PM';
-			} else if (now.getMinutes() < 10) {
-				var time = (now.getHours()-12) + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
-			}
-		} else {
-	    	var time = (now.getHours()-12) + ':' + now.getMinutes() + ':' + now.getSeconds() + ' PM';
-	    }
-	} else {
-		if (now.getSeconds() < 10 || now.getMinutes() < 10) {
-			if (now.getSeconds() < 10 && now.getMinutes() < 10) {
-				var time = now.getHours() + ':0' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
-			} else if (now.getSeconds() < 10) {
-				var time = now.getHours() + ':' + now.getMinutes() + ':0' + now.getSeconds() + ' AM';
-			} else if (now.getMinutes() < 10) {
-				var time = now.getHours() + ':0' + now.getMinutes() + ':' + now.getSeconds() + ' AM';
-			}
-		} else {
-	    	var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds()  + ' AM';
-	    }
-	}
-
-	if (now.getHours() == 0) {
-    	var time = now.getHours()
-  	}
-
-    var date = [months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear()];
-
-    document.getElementById('time').innerHTML = time;
-    document.getElementById('date').innerHTML = date;
-
-    //Call again in 1000 miliseconds
-    setTimeout(loadDateTime, 1000);
-}
-
+//Function that makes the footer visible
 function footer() {
 	document.getElementById("footer").style.display = "block";
-}
-
-function load(obj) {
-	if (newsAddedJson1 >= 3) {
-		if (newsAddedJson2 >= 3) {
-		} else {
-			createElementsJson2();
-		}
-	} else {
-		createElementsJson1();
-	}
 }
