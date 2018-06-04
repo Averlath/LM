@@ -5,26 +5,25 @@
 	<link>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news.html</link>
 	<description>Various news about events</description>
 	<language>en-us</language>
-	<author>Ivan Penev</author>
 	<item>
 		<title>George RR Martin's The Ice Dragon Novel Will Become A Movie</title>
 		<link>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news1.html</link>
-		<language>en-us</language>
-		<author>Ivan Penev</author>
-		<description>George Martin's book is about young girl named Adara, who secretly befriends a rare ice dragon.</description>
+		<guid>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news1.html</guid>
+		<author>ivan.penev92@gmail.com (Ivan Penev)</author>
+		<description>George Martin's book about young girl named Adara, who secretly befriends a rare ice dragon.</description>
 	</item>
 	<item>
 		<title>'Deadpool 2' Has Surpassed 'Logan' At The Domestic Box Office</title>
 		<link>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news2.html</link>
-		<language>en-us</language>
-		<author>Ivan Penev</author>
+		<guid>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news2.html</guid>
+		<author>ivan.penev92@gmail.com (Ivan Penev)</author>
 		<description>Deadpool 2 has grossed more at the box office than the movie Logan.</description>
 	</item>
 	<item>
 		<title>Colliding neutron stars likely formed low-mass black hole</title>
 		<link>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news3.html</link>
-		<language>en-us</language>
-		<author>Ivan Penev</author>
+		<guid>https://raw.githubusercontent.com/Averlath/LM/master/Project%20News/news3.html</guid>
+		<author>ivan.penev92@gmail.com (Ivan Penev)</author>
 		<description>Gravitational waves and high-energy gamma rays from the merger of two neutron stars swept through Earth’s solar system, detected by the LIGO and NASA’s Fermi Gamma-ray Space Telescope.</description>
 	</item>
 </channel>
